@@ -1,0 +1,78 @@
+// Flex Layout
+@mixin display-layout(
+    $display,
+    $direction: null,
+    $justify: null,
+    $align: null,
+    $wrap: null
+) {
+    display: $display;
+    @if $direction {
+        flex-direction: $direction;
+    }
+
+    @if $justify {
+        justify-content: $justify;
+    }
+
+    @if $align {
+        align-items: $align;
+    }
+
+    @if $wrap {
+        flex-wrap: $wrap;
+    }
+}
+
+// Grid Layout
+@mixin grid-layout(
+    $columns,
+    $columnGap: 24px,
+    $rowGap: 24px,
+    $justifyItems: null,
+    $alignItems: null,
+    $justifyContent: null,
+    $alignContent: null,
+    $gridAutoFlow: null
+) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    column-gap: $columnGap;
+    row-gap: $rowGap;
+
+    @if $justifyItems {
+        justify-items: $justifyItems;
+    }
+
+    @if $alignItems {
+        align-items: $alignItems;
+    }
+
+    @if $justifyContent {
+        justify-content: $justifyContent;
+    }
+
+    @if $alignContent {
+        align-content: $alignContent;
+    }
+
+    @if $gridAutoFlow {
+        grid-auto-flow: $gridAutoFlow;
+    }
+}
+
+// Flex columns
+@mixin flex-columns($flex-grow: 1, $flex-basis: 0, $max-width: null, $offset: null) {
+    flex: $flex-grow $flex-basis;
+    max-width: $max-width;
+    @if $offset {
+        margin-left: $flex-grow * $offset;
+    }
+}
+
+// Grid Columns
+@mixin grid-columns($columns: 1, $min: 0px, $max: 1fr, $gap: 0px) {
+    display: grid;
+    grid-template-columns: repeat($columns, minmax($min, $max));
+    gap: $gap;
+}

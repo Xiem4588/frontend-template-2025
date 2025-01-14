@@ -1,0 +1,56 @@
+// transition mixin
+@mixin transition($property, $duration, $timing-function: ease) {
+    transition: $property $duration $timing-function;
+}
+
+// Example:
+
+// .element {
+//     width: 100px;
+//     height: 100px;
+//     background-color: blue;
+//     @include transition(width, 0.3s, ease-in-out);
+// }
+
+// browser prefix mixin
+@mixin prefix($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+// Ex.
+// .button {
+//     @include prefix(appearance, none); // Add prefixes for the 'appearance' property
+//     @include prefix(user-select, none); // Add prefixes for the 'user-select' property
+//     @include prefix(box-shadow, 0 2px 4px rgba(0, 0, 0, 0.2)); // Add prefixes for the 'box-shadow' property
+// }
+
+// box-shadow mixin
+@mixin box-shadow($shadows...) { // The rest parameter $shadows... operator allows you to pass any number of arguments to the mixin
+    box-shadow: $shadows;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+// Example:
+// .some-element {
+//     @include box-shadow(0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1));
+// }
+
+// visually-hidden mixin
+@mixin visually-hidden() {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}

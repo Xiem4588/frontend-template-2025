@@ -1,0 +1,70 @@
+
+@mixin button-primary {
+    --button-background: rgba(var(--color-rgba-primary), 1);
+    --button-text-color: rgba(var(--color-rgba-white), 1);
+    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
+    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+}
+
+@mixin button-black {
+    --button-background: rgba(var(--color-rgba-black), 1);
+    --button-text-color: rgba(var(--color-rgba-white), 1);
+    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
+    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+}
+
+@mixin button-white {
+    --button-background: rgba(var(--color-rgba-white), 1);
+    --button-text-color: rgba(var(--color-rgba-black), 1);
+    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
+    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+}
+
+@mixin button-tertiary {
+    --button-background: rgba(var(--color-rgba-tertiary), 1);
+    --button-text-color: rgba(var(--color-rgba-black), 1);
+    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
+    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+}
+
+@mixin button-blue {
+    --button-background: rgba(var(--color-rgba-blue), 1);
+    --button-text-color: rgba(var(--color-rgba-white), 1);
+    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
+    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+}
+
+@mixin button-beige {
+    --button-background: rgba(var(--color-rgba-beige), 1);
+    --button-text-color: rgba(var(--color-rgba-black), 1);
+    --button-shadow-background: rgba(var(--color-rgba-gray-dark), 1);
+    --button-shadow-focus-color: rgba(var(--color-rgba-gray-dark, 0.6));
+}
+
+@mixin button-gray {
+    --button-background: rgba(var(--color-rgba-gray), 1);
+    --button-text-color: rgba(var(--color-rgba-black), 1);
+    --button-shadow-background: rgba(var(--color-rgba-black), 1);
+    --button-shadow-focus-color: rgba(var(--color-rgba-gray, 0.6));
+}
+
+@mixin button-red {
+    --button-background: rgba(var(--color-rgba-red), 1);
+    --button-text-color: rgba(var(--color-rgba-white), 1);
+    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
+    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+}
+
+@mixin button-yellow {
+    --button-background: rgba(var(--color-rgba-yellow), 1);
+    --button-text-color: rgba(var(--color-rgba-black), 1);
+    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
+    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+}
+
+@mixin button-green {
+    --button-background: rgba(var(--color-rgba-blue), 1);
+    --button-text-color: rgba(var(--color-rgba-white), 1);
+    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
+    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+}

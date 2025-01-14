@@ -1,0 +1,37 @@
+//  COLOR RGBA
+
+:root {
+    /*{ "key":"--color-rgba-white", "value":"#FFFFFF", "name":"White" }*/
+    --color-rgba-white: 255, 255, 255;
+
+    /*{ "key":"--color-rgba-black", "value":"#111111", "name":"Black" "allowedInBlocks":"true" }*/
+    --color-rgba-black: 0, 0, 0;
+
+    /*{ "key":"--color-rgba-beige", "value":"#EBDED3", "name":"Beige", "allowedInBlocks":"true" }*/
+    --color-rgba-beige: 235, 222, 211;
+
+    /*{ "key":"--color-rgba-gray", "value":"#D9D9D9", "name":"Gray", "allowedInBlocks":"true" }*/
+    --color-rgba-gray: 217, 217, 217;
+
+    /*{ "key":"--color-rgba-gray-dark", "value":"#666666", "name":"Gray dark", "allowedInBlocks":"true" }*/
+    --color-rgba-gray-dark: 102, 102, 102;
+
+    /*{ "key":"--color-rgba-blue", "value":"#2666f1", "name":"Blue", "allowedInBlocks":"true" }*/
+    --color-rgba-blue: 38, 102, 241;
+
+    /*{ "key":"--color-rgba-red", "value":"#E3FF00", "name":"red", "allowedInBlocks":"true" }*/
+    --color-rgba-red: 255, 0, 0;
+
+    /*{ "key":"--color-rgba-yellow", "value":"#E3FF00", "name":"yellow", "allowedInBlocks":"true" }*/
+    --color-rgba-yellow: 227, 255, 0;
+
+    /*{ "key":"--color-rgba-green", "value":"#00FF00", "name":"green", "allowedInBlocks":"true" }*/
+    --color-rgba-green: 0, 255, 0;
+
+    /*{ "key":"--color-rgba-primary", "value":"#146e6e", "name":"Primary", "allowedInBlocks":"true" }*/
+    --color-rgba-primary: 20, 110, 110;
+
+    /*{ "key":"--color-rgba-tertiary", "value":"#FFA500", "name":"tertiary", "allowedInBlocks":"true" }*/
+    --color-rgba-tertiary: 255, 165, 0;
+}
+

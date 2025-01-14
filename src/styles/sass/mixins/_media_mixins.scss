@@ -1,0 +1,44 @@
+
+// RESPONSIVE
+@mixin media-device($device) {
+    @if $device == "tablet-mini-down" {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @else if $device == "tablet-mini-up" {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if $device == "tablet-pro-down" {
+        @media (max-width: 1023px) {
+            @content;
+        }
+    }
+    @else if $device == "tablet-pro-up" {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    }
+    @else if $device == "desktop-small-down" {
+        @media (max-width: 1279px) {
+            @content;
+        }
+    }
+    @else if $device == "desktop-small-up" {
+        @media (min-width: 1280px) {
+            @content;
+        }
+    }
+    @else if $device == "desktop-medium-down" {
+        @media (max-width: 1439px) {
+            @content;
+        }
+    }
+    @else if $device == "desktop-medium-up" {
+        @media (min-width: 1440px) {
+            @content;
+        }
+    }
+}

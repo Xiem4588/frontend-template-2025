@@ -1,0 +1,13 @@
+@use "../mixins/" as *;
+
+
+/*{ "key":"one-per-row", "value":"", "name":"one Per Row", "columns":11 }*/
+[data-layout-smart='one-per-row'] {
+    @include grid-columns($columns: 1, $min: 0px, $max: 1fr, $gap: 24px);
+
+    &[data-layout-use-full-bleed=false] {
+        @include media-device("tablet-pro-up") {
+            gap: 0;
+        }
+    }
+}

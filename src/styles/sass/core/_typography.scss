@@ -1,0 +1,117 @@
+// Purpose: Define the typography for the project
+
+@use "../mixins/" as *;
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6;
+}
+
+body {
+    font-family: var(--typography-body-font-ibm);
+    font-size: var(--typography-body-medium);
+    color: var(--typography-body-color);
+    line-height: 150%;
+
+    @include media-device("tablet-pro-up") {}
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: var(--link-common-color);
+    text-decoration: underline;
+    word-break: break-word;
+    outline-style: none;
+    transition: all 0.3s ease;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-weight: 600;
+    line-height: 150%;
+}
+
+h1,
+.h1 {
+    font-size: var(--typography-h1-medium);
+
+    @include media-device("tablet-pro-up") {}
+}
+
+h2,
+.h2 {
+    font-size: var(--typography-h2-medium);
+
+    @include media-device("tablet-pro-up") {}
+}
+
+h3,
+.h3 {
+    font-size: var(--typography-h3-medium);
+
+    @include media-device("tablet-pro-up") {}
+}
+
+h4,
+.h4 {
+    font-size: var(--typography-h4-medium);
+
+    @include media-device("tablet-pro-up") {}
+}
+
+h5,
+.h5 {
+    font-size: var(--typography-h5-medium);
+
+    @include media-device("tablet-pro-up") {}
+}
+
+h6,
+.h6 {
+    font-size: var(--typography-h6-medium);
+
+    @include media-device("tablet-pro-up") {}
+}
+
+.preamble,
+.preamble p {
+    font-size: var(--typography-preamble-m);
+
+    @include media-device("tablet-pro-up") {}
+}
+
+small,
+.small {
+    font-size: var(--typography-preamble-sm);
+
+    @include media-device("tablet-pro-up") {}
+}
+
+.medium {
+    font-size: var(--typography-preamble-m);
+
+    @include media-device("tablet-pro-up") {}
+}
+
+p,
+time,
+.text {
+    font-size: var(--typography-preamble-medium-l);
+
+    @include media-device("tablet-pro-up") {}
+}

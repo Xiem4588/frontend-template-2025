@@ -1,0 +1,28 @@
+@use "../mixins/" as *;
+
+/*{ "key":"four-per-row", "value":"", "name":"Four Per Row", "columns":4 }*/
+[data-layout-smart='four-per-row'] {
+
+    @include media-device("tablet-pro-up") {
+        @include grid-columns($columns: 2, $min: 0px, $max: 1fr, $gap: 24px);
+    }
+
+    @include media-device("desktop-small-up") {
+        @include grid-columns($columns: 4, $min: 0px, $max: 1fr, $gap: 24px);
+    }
+
+    &[data-layout-use-full-bleed=false] {
+        @include media-device("tablet-pro-up") {
+            gap: 0;
+        }
+    }
+
+    .column-1 {}
+
+    .column-2 {}
+
+    .column-3 {}
+
+    .column-4 {}
+
+}
