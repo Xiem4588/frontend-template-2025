@@ -1,0 +1,74 @@
+// This is the file where the themes are defined. The themes are defined using CSS custom properties. The themes are used to change.
+
+[data-site-theme="dark"] {
+    color-scheme: dark;
+    --theme-background: var(--dark-color-rgba-dark-gray);
+    --theme-surface: var(--dark-color-rgba-jet-black);
+    --theme-surface-bright: var(--dark-color-rgba-charcoal-gray);
+    --theme-surface-light: var(--default-color-rgba-dark-gray);
+    --theme-surface-variant: var(--dark-color-rgba-neutral-gray);
+    --theme-on-surface-variant: var(--default-color-rgba-dark-gray);
+    --theme-primary: var(--default-color-rgba-vivid-blue);
+    --theme-primary-darken-1: var(--dark-color-rgba-cerulean-blue);
+    --theme-secondary: var(--default-color-rgba-dark-gray);
+    --theme-secondary-darken-1: var(--dark-color-rgba-sea-green);
+    --theme-error: var(--dark-color-rgba-rose-pink);
+    --theme-info: var(--default-color-rgba-vivid-blue);
+    --theme-success: var(--default-color-rgba-grass-green);
+    --theme-warning: var(--default-color-rgba-deep-orange);
+    --theme-surface-variant-alt: var(--dark-color-rgba-jet-gray);
+    --theme-tertiary: var(--default-color-rgba-salmon-pink);
+    --theme-accent: var(--dark-color-rgba-deep-pink);
+    --theme-quarternary: var(--default-color-rgba-steel-blue);
+    --theme-on-background: var(--default-color-rgba-white);
+    --theme-on-surface: var(--default-color-rgba-white);
+    --theme-on-surface-bright: var(--default-color-rgba-white);
+    --theme-on-surface-light: var(--default-color-rgba-white);
+    --theme-on-primary: var(--default-color-rgba-white);
+    --theme-on-primary-darken-1: var(--default-color-rgba-white);
+    --theme-on-secondary: var(--default-color-rgba-white);
+    --theme-on-secondary-darken-1: var(--default-color-rgba-white);
+    --theme-on-error: var(--default-color-rgba-white);
+    --theme-on-info: var(--default-color-rgba-white);
+    --theme-on-success: var(--default-color-rgba-white);
+    --theme-on-warning: var(--default-color-rgba-white);
+    --theme-on-surface-variant-alt: var(--default-color-rgba-white);
+    --theme-on-tertiary: var(--default-color-rgba-white);
+    --theme-on-accent: var(--default-color-rgba-white);
+    --theme-on-quarternary: var(--default-color-rgba-black);
+    --theme-kbd: var(--default-color-rgba-dark-slate-gray);
+    --theme-on-kbd: var(--default-color-rgba-white);
+    --theme-code: var(--dark-color-rgba-slate-gray);
+    --theme-on-code: var(--dark-color-rgba-silver);
+    --border-color: var(--default-color-rgba-white);
+    //
+    --theme-surface-variant-alt-overlay-multiplier: 1;
+    --theme-secondary-overlay-multiplier: 1;
+    --theme-surface-light-overlay-multiplier: 1;
+    --theme-surface-bright-overlay-multiplier: 1;
+    --theme-surface-overlay-multiplier: 1;
+    --theme-background-overlay-multiplier: 1;
+    --theme-surface-variant-overlay-multiplier: 2;
+    --theme-primary-overlay-multiplier: 2;
+    --theme-primary-darken-1-overlay-multiplier: 2;
+    --theme-secondary-darken-1-overlay-multiplier: 2;
+    --theme-error-overlay-multiplier: 2;
+    --theme-info-overlay-multiplier: 2;
+    --theme-success-overlay-multiplier: 2;
+    --theme-warning-overlay-multiplier: 2;
+    --theme-tertiary-overlay-multiplier: 2;
+    --theme-accent-overlay-multiplier: 2;
+    --theme-quarternary-overlay-multiplier: 2;
+    //
+    --border-opacity: 0.12;
+    --medium-emphasis-opacity: 0.7;
+    --disabled-opacity: 0.5;
+    --hover-opacity: 0.04;
+    --focus-opacity: 0.12;
+    --selected-opacity: 0.08;
+    --activated-opacity: 0.12;
+    --pressed-opacity: 0.16;
+    --dragged-opacity: 0.08;
+    --idle-opacity: 0.1;
+    --high-emphasis-opacity: 1;
+}

@@ -22,7 +22,7 @@
             position: relative;
         }
 
-        .column-1 {
+        .d-m-none {
             @include media-device('tablet-pro-down') {
                 display: none;
             }
@@ -112,7 +112,7 @@
             cursor: pointer;
             font-weight: 700;
             text-align: left;
-            font-size: var(--typography-body-medium);
+            font-size: var(--typography-bodytext-m);
         }
     }
 
@@ -124,7 +124,7 @@
         align-items: flex-start;
         gap: 20px;
         align-self: stretch;
-        color: #1f2b3f;
+        color: rgb(var(--theme-on-surface));
     }
 
     &__action-wrap {
@@ -140,10 +140,10 @@
     }
 
     &__footer {
-        background: var(--footer-color-background-footer);
+        background: rgb(var(--theme-background));
         width: 100%;
         padding: 0;
-        color: var(--footer-color-text-main);
+        color: rgb(var(--theme-on-background));
 
         &-wrap {}
 
@@ -151,7 +151,7 @@
             padding: 10px 20px;
             display: flex;
             justify-content: center;
-            font-size: var(--typography-preamble-medium);
+            font-size: var(--typography-preamble-m);
         }
 
         &-legal-wrap {

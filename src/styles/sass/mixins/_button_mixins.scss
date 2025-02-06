@@ -37,8 +37,8 @@
 @mixin button-beige {
     --button-background: rgba(var(--color-rgba-beige), 1);
     --button-text-color: rgba(var(--color-rgba-black), 1);
-    --button-shadow-background: rgba(var(--color-rgba-gray-dark), 1);
-    --button-shadow-focus-color: rgba(var(--color-rgba-gray-dark, 0.6));
+    --button-shadow-background: rgba(var(--color-rgba-dark-gray), 1);
+    --button-shadow-focus-color: rgba(var(--color-rgba-dark-gray, 0.6));
 }
 
 @mixin button-gray {

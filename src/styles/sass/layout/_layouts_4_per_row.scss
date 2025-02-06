@@ -17,12 +17,28 @@
         }
     }
 
-    .column-1 {}
+    .column-2-first {
+        grid-column: 1 / 3;
+    }
 
-    .column-2 {}
+    .column-2-center {
+        grid-column: 2 / 4;
+    }
 
-    .column-3 {}
+    .column-2-last {
+        grid-column: 3 / 5;
+    }
 
-    .column-4 {}
+    .column-3-first {
+        grid-column: 1 / 4;
+    }
+
+    .column-3-last {
+        grid-column: 2 / 5;
+    }
+
+    .column-4-all {
+        grid-column: 1 / 5;
+    }
 
 }

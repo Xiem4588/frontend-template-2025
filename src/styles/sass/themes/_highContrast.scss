@@ -1,0 +1,64 @@
+// This is the file where the themes are defined. The themes are defined using CSS custom properties. The themes are used to change.
+
+[data-site-theme="highContrast"] {
+    color-scheme: dark;
+    --theme-background: var(--default-color-rgba-black);
+    --theme-background-overlay-multiplier: 1;
+    --theme-surface: 18,18,18;
+    --theme-surface-overlay-multiplier: 1;
+    --theme-primary: 255,215,0;
+    --theme-primary-overlay-multiplier: 2;
+    --theme-primary-darken-1: 230,195,0;
+    --theme-primary-darken-1-overlay-multiplier: 2;
+    --theme-secondary: 0,204,221;
+    --theme-secondary-overlay-multiplier: 2;
+    --theme-secondary-darken-1: 0,230,0;
+    --theme-secondary-darken-1-overlay-multiplier: 2;
+    --theme-accent: 255,0,255;
+    --theme-accent-overlay-multiplier: 2;
+    --theme-info: 49,170,255;
+    --theme-info-overlay-multiplier: 2;
+    --theme-warning: 255,170,0;
+    --theme-warning-overlay-multiplier: 2;
+    --theme-error: 255,0,0;
+    --theme-error-overlay-multiplier: 2;
+    --theme-success: 0,255,0;
+    --theme-success-overlay-multiplier: 2;
+    --theme-on-surface-variant: var(--default-color-rgba-white);
+    --theme-surface-light: 34,34,34;
+    --theme-surface-light-overlay-multiplier: 1;
+    --theme-surface-bright: var(--default-color-rgba-black);
+    --theme-surface-bright-overlay-multiplier: 1;
+    --theme-surface-variant: 51,51,51;
+    --theme-surface-variant-overlay-multiplier: 1;
+    --theme-on-background: var(--default-color-rgba-white);
+    --theme-on-surface: var(--default-color-rgba-white);
+    --theme-on-primary: var(--default-color-rgba-black);
+    --theme-on-primary-darken-1: var(--default-color-rgba-black);
+    --theme-on-secondary: var(--default-color-rgba-black);
+    --theme-on-secondary-darken-1: var(--default-color-rgba-black);
+    --theme-on-accent: var(--default-color-rgba-white);
+    --theme-on-info: var(--default-color-rgba-white);
+    --theme-on-warning: var(--default-color-rgba-black);
+    --theme-on-error: var(--default-color-rgba-white);
+    --theme-on-success: var(--default-color-rgba-black);
+    --theme-on-surface-light: var(--default-color-rgba-white);
+    --theme-on-surface-bright: var(--default-color-rgba-white);
+    --theme-kbd: var(--default-color-rgba-black);
+    --theme-on-kbd: var(--default-color-rgba-white);
+    --theme-code: var(--default-color-rgba-black);
+    --theme-on-code: var(--default-color-rgba-white);
+    --border-color: var(--default-color-rgba-white);
+    //
+    --border-opacity: 0.87;
+    --high-emphasis-opacity: 1;
+    --medium-emphasis-opacity: 0.87;
+    --disabled-opacity: 0.5;
+    --idle-opacity: 0.1;
+    --hover-opacity: 0.2;
+    --focus-opacity: 0.3;
+    --selected-opacity: 0.3;
+    --activated-opacity: 0.3;
+    --pressed-opacity: 0.4;
+    --dragged-opacity: 0.2;
+}

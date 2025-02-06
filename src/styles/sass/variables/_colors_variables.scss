@@ -1,37 +1,45 @@
-//  COLOR RGBA
+// This file contains CSS custom properties for colors
 
+// This is color scheme for light (default) mode
 :root {
-    /*{ "key":"--color-rgba-white", "value":"#FFFFFF", "name":"White" }*/
-    --color-rgba-white: 255, 255, 255;
-
-    /*{ "key":"--color-rgba-black", "value":"#111111", "name":"Black" "allowedInBlocks":"true" }*/
-    --color-rgba-black: 0, 0, 0;
-
-    /*{ "key":"--color-rgba-beige", "value":"#EBDED3", "name":"Beige", "allowedInBlocks":"true" }*/
-    --color-rgba-beige: 235, 222, 211;
-
-    /*{ "key":"--color-rgba-gray", "value":"#D9D9D9", "name":"Gray", "allowedInBlocks":"true" }*/
-    --color-rgba-gray: 217, 217, 217;
-
-    /*{ "key":"--color-rgba-gray-dark", "value":"#666666", "name":"Gray dark", "allowedInBlocks":"true" }*/
-    --color-rgba-gray-dark: 102, 102, 102;
-
-    /*{ "key":"--color-rgba-blue", "value":"#2666f1", "name":"Blue", "allowedInBlocks":"true" }*/
-    --color-rgba-blue: 38, 102, 241;
-
-    /*{ "key":"--color-rgba-red", "value":"#E3FF00", "name":"red", "allowedInBlocks":"true" }*/
-    --color-rgba-red: 255, 0, 0;
-
-    /*{ "key":"--color-rgba-yellow", "value":"#E3FF00", "name":"yellow", "allowedInBlocks":"true" }*/
-    --color-rgba-yellow: 227, 255, 0;
-
-    /*{ "key":"--color-rgba-green", "value":"#00FF00", "name":"green", "allowedInBlocks":"true" }*/
-    --color-rgba-green: 0, 255, 0;
-
-    /*{ "key":"--color-rgba-primary", "value":"#146e6e", "name":"Primary", "allowedInBlocks":"true" }*/
-    --color-rgba-primary: 20, 110, 110;
-
-    /*{ "key":"--color-rgba-tertiary", "value":"#FFA500", "name":"tertiary", "allowedInBlocks":"true" }*/
-    --color-rgba-tertiary: 255, 165, 0;
+    --default-color-rgba-white: 255,255,255;
+    --default-color-rgba-ghost-white: 250,250,250;
+    --default-color-rgba-black: 0,0,0;
+    --default-color-rgba-dark-slate-gray: 33,37,41;
+    --default-color-rgba-dark-gray: 66,66,66;
+    --default-color-rgba-gainsboro: 222,222,222;
+    --default-color-rgba-whitesmoke: 245,245,245;
+    --default-color-rgba-light-gray: 238,238,238;
+    --default-color-rgba-dark-blue: 31,85,146;
+    --default-color-rgba-light-blue: 92,187,246;
+    --default-color-rgba-teal-blue: 1,135,134;
+    --default-color-rgba-dodger-blue: 24,103,192;
+    --default-color-rgba-vivid-blue: 33,150,243;
+    --default-color-rgba-dark-red: 176,0,32;
+    --default-color-rgba-grass-green: 76,175,80;
+    --default-color-rgba-deep-orange: 251,140,0;
+    --default-color-rgba-salmon-pink: 229,115,115;
+    --default-color-rgba-deep-blue: 0,92,175;
+    --default-color-rgba-steel-blue: 176,209,232;
 }
 
+// This is color scheme for dark mode
+:root {
+    --dark-color-rgba-dark-gray: 18,18,18;
+    --dark-color-rgba-jet-black: 33,33,33;
+    --dark-color-rgba-charcoal-gray: 71,71,71;
+    --dark-color-rgba-neutral-gray: 163,163,163;
+    --dark-color-rgba-cerulean-blue: 39,124,193;
+    --dark-color-rgba-sea-green: 72,169,166;
+    --dark-color-rgba-rose-pink: 207,102,121;
+    --dark-color-rgba-jet-gray: 51,51,51;
+    --dark-color-rgba-deep-pink: 255,64,129;
+    --dark-color-rgba-slate-gray: 52,52,52;
+    --dark-color-rgba-silver: 204,204,204;
+}
+
+// This is color scheme for ... mode
+:root {}
+
+// This is color scheme for ... mode
+:root {}

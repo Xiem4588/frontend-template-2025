@@ -1,0 +1,53 @@
+@use "../mixins/" as *;
+
+.border-background {
+    --border-color: var(--theme-background);
+}
+.border-surface {
+    --border-color: var(--theme-surface);
+}
+.border-surface-bright {
+    --border-color: var(--theme-surface-bright);
+}
+.border-surface-light {
+    --border-color: var(--theme-surface-light);
+}
+.border-surface-variant {
+    --border-color: var(--theme-surface-variant);
+}
+.border-primary {
+    --border-color: var(--theme-primary);
+}
+.border-primary-darken-1 {
+    --border-color: var(--theme-primary-darken-1);
+}
+.border-secondary {
+    --border-color: var(--theme-secondary);
+}
+.border-secondary-darken-1 {
+    --border-color: var(--theme-secondary-darken-1);
+}
+.border-error {
+    --border-color: var(--theme-error);
+}
+.border-info {
+    --border-color: var(--theme-info);
+}
+.border-success {
+    --border-color: var(--theme-success);
+}
+.border-warning {
+    --border-color: var(--theme-warning);
+}
+.border-surface-variant-alt {
+    --border-color: var(--theme-surface-variant-alt);
+}
+.border-tertiary {
+    --border-color: var(--theme-tertiary);
+}
+.border-accent {
+    --border-color: var(--theme-accent);
+}
+.border-quarternary {
+    --border-color: var(--theme-quarternary);
+}

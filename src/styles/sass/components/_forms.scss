@@ -35,19 +35,19 @@ select {
 	border-radius: 5rem;
 	width: 100%;
 	outline: none;
-	line-height: var(--typography-line-height-170);
+	line-height: var(--typography-lineheight-170);
 	transition: border-color 0.3s ease;
 	color: var(--form-color-input-text);
-	font-size: var(--typography-body-medium);
-	border: 1px solid var(--form-color-input-border);
-	background-color: var(--form-color-input-background);
+	font-size: var(--typography-bodytext-m);
+	border: 1px solid rgb(var(--border-color));
+	background-color: rgb(var(--theme-background));
 
 	@include media-device('desktop-up') {
-		font-size: var(--typography-body-regular);
+		font-size: var(--typography-bodytext-m);
 	}
 
 	&:focus {
-		box-shadow: 0px 0px 6px 1px var(--form-color-input-border);
+		box-shadow: 0px 0px 6px 1px rgb(var(--border-color));
 		transition: border-color 0.3s ease;
 	}
 
@@ -57,7 +57,7 @@ select {
 
 	&::placeholder {
 		color: darkgrey;
-		font-size: var(--typography-body-medium);
+		font-size: var(--typography-bodytext-m);
 	}
 
 	&:disabled {
@@ -81,7 +81,7 @@ select {
 		top: var(--space-34);
 		left: var(--space-18);
 		font-weight: 400;
-		font-size: var(--typography-body-small);
+		font-size: var(--typography-bodytext-s);
 		color: #d81f27;
 
 		&.active {
@@ -109,10 +109,10 @@ select {
 	padding: var(--space-12) var(--space-20);
 	border: 2px solid transparent;
 	outline: none;
-	background-color: rgba(var(--color-rgba-white), 1);
+	background-color: rgb(var(--theme-surface));
 	color: currentColor;
-	font-size: var(--typography-body-medium);
-	line-height: var(--typography-line-height-170);
+	font-size: var(--typography-bodytext-m);
+	line-height: var(--typography-lineheight-170);
 	transition: border-color 0.3s ease;
 
 	@include media-device('desktop-up') {
@@ -120,7 +120,7 @@ select {
 	}
 
 	&:focus {
-		border-color: rgba(var(--color-rgba-black), 1);
+		border-color: rgb(var(--theme-on-surface));
 		transition: border-color 0.125s ease;
 	}
 
@@ -202,7 +202,7 @@ input[type="radio"] {
 	&:focus-visible {
 		+label {
 			&:before {
-				border-color: rgba(var(--color-rgba-black), 1);
+				border-color: rgb(var(--theme-on-surface));
 				transition: border-color 0.3s ease;
 			}
 		}
@@ -229,24 +229,24 @@ input[type="radio"] {
 		color: inherit;
 		position: relative;
 		padding: 0;
-		font-size: var(--typography-body-medium);
+		font-size: var(--typography-bodytext-m);
 		cursor: pointer;
 		user-select: none;
 
 		@include media-device('desktop-up') {
-			font-size: var(--typography-body-regular);
-			line-height: var(--typography-line-height-140);
+			font-size: var(--typography-bodytext-m);
+			line-height: var(--typography-lineheight-140);
 		}
 
 		&>p {
 			@include media-device('desktop-up') {
-				font-size: var(--typography-body-regular);
+				font-size: var(--typography-bodytext-m);
 			}
 		}
 
 		&:active {
 			&:before {
-				border-color: rgba(var(--color-rgba-white), 1);
+				border-color: rgb(var(--theme-surface));
 				transition: border-color 0.3s ease;
 			}
 		}
@@ -262,8 +262,8 @@ input[type="radio"] {
 			left: 0;
 			height: 20px;
 			width: 20px;
-			border: 1px solid rgba(var(--color-rgba-white), 1);
-			background-color: rgba(var(--color-rgba-white), 1);
+			border: 1px solid rgb(var(--theme-surface));
+			background-color: rgb(var(--theme-surface));
 			transition: border-color 0.3s ease;
 		}
 
@@ -302,7 +302,7 @@ input[type='radio'] {
 		background-position: left 0 bottom 0px;
 		background-size: 100% 0.3rem;
 		background-repeat: no-repeat;
-		line-height: var(--typography-line-height-170);
+		line-height: var(--typography-lineheight-170);
 		margin-bottom: var(--space-s);
 	}
 
@@ -327,9 +327,9 @@ input[type='radio'] {
 
 	.form-tooltip {
 		border-radius: 50%;
-		color: rgba(var(--color-rgba-white), 1);
+		color: rgb(var(--theme-surface));
 		font-weight: bold;
-		font-size: var(--typography-body-medium);
+		font-size: var(--typography-bodytext-m);
 		width: 30px;
 		height: 30px;
 		display: flex;
@@ -350,10 +350,10 @@ input[type='radio'] {
 
 		&_error {
 			background-color: #d81f27 !important;
-			color: rgba(var(--color-rgba-white), 1);
+			color: rgb(var(--theme-surface));
 
 			&:hover {
-				color: rgba(var(--color-rgba-white), 1);
+				color: rgb(var(--theme-surface));
 			}
 		}
 	}

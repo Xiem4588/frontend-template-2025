@@ -1,0 +1,65 @@
+// This is the file where the themes are defined. The themes are defined using CSS custom properties. The themes are used to change.
+
+[data-site-theme="blackguard"] {
+    color-scheme: dark;
+    --theme-background: 15,12,36;
+    --theme-primary: 231,129,13;
+    --theme-surface: 30,24,74;
+    --theme-info: 156,39,176;
+    --theme-accent: 255,64,129;
+    --theme-success: 132,179,138;
+    --theme-surface-light: 54,43,137;
+    --theme-surface-bright: 86,79,138;
+    --theme-surface-variant: 100,88,180;
+    --theme-primary-darken-1: 197,110,11;
+    --theme-secondary: 138,43,226;
+    --theme-secondary-darken-1: 121,25,203;
+    --theme-error: 255,85,85;
+    --theme-warning: 255,167,38;
+    --theme-on-surface-variant: var(--default-color-rgba-white);
+    --theme-on-background: var(--default-color-rgba-white);
+    --theme-on-primary: var(--default-color-rgba-white);
+    --theme-on-surface: var(--default-color-rgba-white);
+    --theme-on-info: var(--default-color-rgba-white);
+    --theme-on-accent: var(--default-color-rgba-white);
+    --theme-on-success: var(--default-color-rgba-white);
+    --theme-on-surface-light: var(--default-color-rgba-white);
+    --theme-on-surface-bright: var(--default-color-rgba-white);
+    --theme-on-primary-darken-1: var(--default-color-rgba-white);
+    --theme-on-secondary: var(--default-color-rgba-white);
+    --theme-on-secondary-darken-1: var(--default-color-rgba-white);
+    --theme-on-error: var(--default-color-rgba-white);
+    --theme-on-warning: var(--default-color-rgba-black);
+    --theme-kbd: var(--default-color-rgba-dark-slate-gray);
+    --theme-on-kbd: var(--default-color-rgba-white);
+    --theme-code: var(--dark-color-rgba-slate-gray);
+    --theme-on-code: var(--dark-color-rgba-silver);
+    --border-color: var(--default-color-rgba-white);
+    //
+    --theme-background-overlay-multiplier: 1;
+    --theme-warning-overlay-multiplier: 2;
+    --theme-primary-overlay-multiplier: 2;
+    --theme-error-overlay-multiplier: 2;
+    --theme-surface-overlay-multiplier: 1;
+    --theme-secondary-darken-1-overlay-multiplier: 1;
+    --theme-info-overlay-multiplier: 1;
+    --theme-secondary-overlay-multiplier: 1;
+    --theme-accent-overlay-multiplier: 2;
+    --theme-primary-darken-1-overlay-multiplier: 2;
+    --theme-success-overlay-multiplier: 2;
+    --theme-surface-variant-overlay-multiplier: 1;
+    --theme-surface-light-overlay-multiplier: 1;
+    --theme-surface-bright-overlay-multiplier: 1;
+    //
+    --border-opacity: 0.12;
+    --high-emphasis-opacity: 0.87;
+    --medium-emphasis-opacity: 0.6;
+    --disabled-opacity: 0.38;
+    --idle-opacity: 0.1;
+    --hover-opacity: 0.08;
+    --focus-opacity: 0.12;
+    --selected-opacity: 0.12;
+    --activated-opacity: 0.12;
+    --pressed-opacity: 0.16;
+    --dragged-opacity: 0.08;
+}

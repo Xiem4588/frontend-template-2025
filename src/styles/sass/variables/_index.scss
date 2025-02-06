@@ -1,12 +1,4 @@
 @use 'colors_variables';
-@use 'opacity_variables';
 @use 'space_variables';
 @use 'typography_variables';
-@use 'typography_line_height';
-
-:root {
-    --transition-value-300ms: all 0.3s ease;
-    --font-weight-value-300: 300;
-    --font-weight-value-500: 500;
-    --font-weight-value-700: 700;
-}
+@use 'opacity_variables';

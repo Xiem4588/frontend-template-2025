@@ -1,0 +1,113 @@
+@use "../mixins/" as *;
+
+[data-background] {
+    --theme-overlay-multiplier: var(--theme-background-overlay-multiplier);
+    background-color: rgb(var(--theme-background)) !important;
+    color: rgb(var(--theme-on-background)) !important;
+}
+
+[data-background="surface"] {
+    --theme-overlay-multiplier: var(--theme-surface-overlay-multiplier);
+    background-color: rgb(var(--theme-surface)) !important;
+    color: rgb(var(--theme-on-surface)) !important;
+}
+
+[data-background="surfaceBright"] {
+    --theme-overlay-multiplier: var(
+        --theme-surface-bright-overlay-multiplier
+    );
+    background-color: rgb(var(--theme-surface-bright)) !important;
+    color: rgb(var(--theme-on-surface-bright)) !important;
+}
+
+[data-background="surfaceLight"] {
+    --theme-overlay-multiplier: var(--theme-surface-light-overlay-multiplier);
+    background-color: rgb(var(--theme-surface-light)) !important;
+    color: rgb(var(--theme-on-surface-light)) !important;
+}
+
+[data-background="surfaceVariant"] {
+    --theme-overlay-multiplier: var(
+        --theme-surface-variant-overlay-multiplier
+    );
+    background-color: rgb(var(--theme-surface-variant)) !important;
+    color: rgb(var(--theme-on-surface-variant)) !important;
+}
+
+[data-background="primary"] {
+    --theme-overlay-multiplier: var(--theme-primary-overlay-multiplier);
+    background-color: rgb(var(--theme-primary)) !important;
+    color: rgb(var(--theme-on-primary)) !important;
+}
+
+[data-background="primaryDarken-1"] {
+    --theme-overlay-multiplier: var(
+        --theme-primary-darken-1-overlay-multiplier
+    );
+    background-color: rgb(var(--theme-primary-darken-1)) !important;
+    color: rgb(var(--theme-on-primary-darken-1)) !important;
+}
+
+[data-background="secondary"] {
+    --theme-overlay-multiplier: var(--theme-secondary-overlay-multiplier);
+    background-color: rgb(var(--theme-secondary)) !important;
+    color: rgb(var(--theme-on-secondary)) !important;
+}
+
+[data-background="secondaryDarken-1"] {
+    --theme-overlay-multiplier: var(
+        --theme-secondary-darken-1-overlay-multiplier
+    );
+    background-color: rgb(var(--theme-secondary-darken-1)) !important;
+    color: rgb(var(--theme-on-secondary-darken-1)) !important;
+}
+
+[data-background="error"] {
+    --theme-overlay-multiplier: var(--theme-error-overlay-multiplier);
+    background-color: rgb(var(--theme-error)) !important;
+    color: rgb(var(--theme-on-error)) !important;
+}
+
+[data-background="info"] {
+    --theme-overlay-multiplier: var(--theme-info-overlay-multiplier);
+    background-color: rgb(var(--theme-info)) !important;
+    color: rgb(var(--theme-on-info)) !important;
+}
+
+[data-background="success"] {
+    --theme-overlay-multiplier: var(--theme-success-overlay-multiplier);
+    background-color: rgb(var(--theme-success)) !important;
+    color: rgb(var(--theme-on-success)) !important;
+}
+
+[data-background="warning"] {
+    --theme-overlay-multiplier: var(--theme-warning-overlay-multiplier);
+    background-color: rgb(var(--theme-warning)) !important;
+    color: rgb(var(--theme-on-warning)) !important;
+}
+
+[data-background="surfaceVariantAlt"] {
+    --theme-overlay-multiplier: var(
+        --theme-surface-variant-alt-overlay-multiplier
+    );
+    background-color: rgb(var(--theme-surface-variant-alt)) !important;
+    color: rgb(var(--theme-on-surface-variant-alt)) !important;
+}
+
+[data-background="tertiary"] {
+    --theme-overlay-multiplier: var(--theme-tertiary-overlay-multiplier);
+    background-color: rgb(var(--theme-tertiary)) !important;
+    color: rgb(var(--theme-on-tertiary)) !important;
+}
+
+[data-background="accent"] {
+    --theme-overlay-multiplier: var(--theme-accent-overlay-multiplier);
+    background-color: rgb(var(--theme-accent)) !important;
+    color: rgb(var(--theme-on-accent)) !important;
+}
+
+[data-background="quarternary"] {
+    --theme-overlay-multiplier: var(--theme-quarternary-overlay-multiplier);
+    background-color: rgb(var(--theme-quarternary)) !important;
+    color: rgb(var(--theme-on-quarternary)) !important;
+}

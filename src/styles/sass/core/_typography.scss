@@ -5,12 +5,13 @@
 html {
     font-size: 62.5%;
     line-height: 1.6;
+    font-family: var(--fontfamily-body);
 }
 
 body {
-    font-family: var(--typography-body-font-ibm);
-    font-size: var(--typography-body-medium);
-    color: var(--typography-body-color);
+    font-family: var(--fontfamily-body);
+    font-size: var(--typography-bodytext-m);
+    color: currentColor;
     line-height: 150%;
 
     @include media-device("tablet-pro-up") {}
@@ -23,7 +24,7 @@ body {
 }
 
 a {
-    color: var(--link-common-color);
+    color: currentColor;
     text-decoration: underline;
     word-break: break-word;
     outline-style: none;
@@ -48,42 +49,42 @@ h6,
 
 h1,
 .h1 {
-    font-size: var(--typography-h1-medium);
+    font-size: var(--typography-h1-m);
 
     @include media-device("tablet-pro-up") {}
 }
 
 h2,
 .h2 {
-    font-size: var(--typography-h2-medium);
+    font-size: var(--typography-h2-m);
 
     @include media-device("tablet-pro-up") {}
 }
 
 h3,
 .h3 {
-    font-size: var(--typography-h3-medium);
+    font-size: var(--typography-h3-m);
 
     @include media-device("tablet-pro-up") {}
 }
 
 h4,
 .h4 {
-    font-size: var(--typography-h4-medium);
+    font-size: var(--typography-h4-m);
 
     @include media-device("tablet-pro-up") {}
 }
 
 h5,
 .h5 {
-    font-size: var(--typography-h5-medium);
+    font-size: var(--typography-h5-m);
 
     @include media-device("tablet-pro-up") {}
 }
 
 h6,
 .h6 {
-    font-size: var(--typography-h6-medium);
+    font-size: var(--typography-h6-m);
 
     @include media-device("tablet-pro-up") {}
 }
@@ -111,7 +112,7 @@ small,
 p,
 time,
 .text {
-    font-size: var(--typography-preamble-medium-l);
+    font-size: var(--typography-preamble-m-l);
 
     @include media-device("tablet-pro-up") {}
 }

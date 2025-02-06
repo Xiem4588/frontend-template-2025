@@ -1,0 +1,73 @@
+// This file contains CSS custom properties for colors
+
+:root {
+    --theme-background: var(--default-color-rgba-white);
+    --theme-surface: var(--default-color-rgba-white);
+    --theme-surface-bright: var(--default-color-rgba-ghost-white);
+    --theme-surface-light: var(--default-color-rgba-light-gray);
+    --theme-surface-variant: var(--default-color-rgba-dark-gray);
+    --theme-on-surface-variant: var(--default-color-rgba-light-gray);
+    --theme-primary: var(--default-color-rgba-dodger-blue);
+    --theme-primary-darken-1: var(--default-color-rgba-dark-blue);
+    --theme-secondary: var(--default-color-rgba-light-blue);
+    --theme-secondary-darken-1: var(--default-color-rgba-teal-blue);
+    --theme-error: var(--default-color-rgba-red);
+    --theme-info: var(--default-color-rgba-vivid-blue);
+    --theme-success: var(--default-color-rgba-green);
+    --theme-warning: var(--default-color-rgba-deep-orange);
+    --theme-surface-variant-alt: var(--default-color-rgba-gainsboro);
+    --theme-tertiary: var(--default-color-rgba-salmon-pink);
+    --theme-accent: var(--default-color-rgba-deep-blue);
+    --theme-quarternary: var(--default-color-rgba-steel-blue);
+    --theme-on-background: var(--default-color-rgba-black);
+    --theme-on-surface: var(--default-color-rgba-black);
+    --theme-on-surface-bright: var(--default-color-rgba-black);
+    --theme-on-surface-light: var(--default-color-rgba-black);
+    --theme-on-primary: var(--default-color-rgba-white);
+    --theme-on-primary-darken-1: var(--default-color-rgba-white);
+    --theme-on-secondary: var(--default-color-rgba-black);
+    --theme-on-secondary-darken-1: var(--default-color-rgba-white);
+    --theme-on-error: var(--default-color-rgba-white);
+    --theme-on-info: var(--default-color-rgba-white);
+    --theme-on-success: var(--default-color-rgba-white);
+    --theme-on-warning: var(--default-color-rgba-white);
+    --theme-on-surface-variant-alt: var(--default-color-rgba-black);
+    --theme-on-tertiary: var(--default-color-rgba-white);
+    --theme-on-accent: var(--default-color-rgba-white);
+    --theme-on-quarternary: var(--default-color-rgba-black);
+    --theme-kbd: var(--default-color-rgba-dark-slate-gray);
+    --theme-on-kbd: var(--default-color-rgba-white);
+    --theme-code: var(--default-color-rgba-whitesmoke);
+    --theme-on-code: var(--default-color-rgba-black);
+    --border-color: var(--default-color-rgba-black);
+    //
+    --theme-background-overlay-multiplier: 1;
+    --theme-quarternary-overlay-multiplier: 1;
+    --theme-surface-overlay-multiplier: 1;
+    --theme-tertiary-overlay-multiplier: 1;
+    --theme-surface-bright-overlay-multiplier: 1;
+    --theme-surface-variant-alt-overlay-multiplier: 1;
+    --theme-surface-light-overlay-multiplier: 1;
+    --theme-warning-overlay-multiplier: 1;
+    --theme-secondary-overlay-multiplier: 1;
+    --theme-success-overlay-multiplier: 1;
+    --theme-info-overlay-multiplier: 1;
+    --theme-secondary-darken-1-overlay-multiplier: 1;
+    --theme-surface-variant-overlay-multiplier: 2;
+    --theme-accent-overlay-multiplier: 2;
+    --theme-error-overlay-multiplier: 2;
+    --theme-primary-overlay-multiplier: 2;
+    --theme-primary-darken-1-overlay-multiplier: 2;
+    //
+    --border-opacity: 0.12;
+    --high-emphasis-opacity: 0.87;
+    --medium-emphasis-opacity: 0.6;
+    --disabled-opacity: 0.38;
+    --idle-opacity: 0.04;
+    --hover-opacity: 0.04;
+    --focus-opacity: 0.12;
+    --selected-opacity: 0.08;
+    --activated-opacity: 0.12;
+    --pressed-opacity: 0.12;
+    --dragged-opacity: 0.08;
+}

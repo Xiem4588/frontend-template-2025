@@ -10,13 +10,13 @@ button {
     align-items: center;
     justify-content: center;
     border: none;
-    color: var(--button-text-color);
-    background: var(--button-background);
+    color: rgb(var(--theme-on-surface));
+    background: rgb(var(--theme-tertiary));
     padding: var(--space-18) var(--space-24);
-    font-size: var(--typography-body-medium);
-    font-weight: var(--font-weight-value-700);
-    transition: var(--transition-value-300ms);
-    box-shadow: -6px 6px 0px 0px var(--button-shadow-background);
+    font-size: var(--typography-bodytext-m);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: -6px 6px 0px 0px rgb(var(--border-color));
 
     &:disabled {
         opacity: 0.6;
@@ -36,8 +36,8 @@ button {
     }
 
     &:focus {
-        border-color: var(--button-shadow-background);
-        box-shadow: -6px 6px 0px 0px var(--button-shadow-background), 0 4px 20px 0 var(--button-shadow-focus-color);
+        border-color: rgb(var(--border-color));
+        box-shadow: -6px 6px 0px 0px rgb(var(--border-color)), 0 4px 20px 0 rgb(var(--border-color));
     }
 
     &.button--primary {
