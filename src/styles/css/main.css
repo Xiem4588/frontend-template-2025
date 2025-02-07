@@ -122,7 +122,6 @@ html {
 body {
   font-family: var(--fontfamily-body);
   font-size: var(--typography-bodytext-m);
-  color: currentColor;
   line-height: 150%;
 }
 *, ::after, ::before {
@@ -157,27 +156,27 @@ h6,
 
 h1,
 .h1 {
-  font-size: var(--typography-h1-m);
+  font-size: var(--typography-heading-h1-m);
 }
 h2,
 .h2 {
-  font-size: var(--typography-h2-m);
+  font-size: var(--typography-heading-h2-m);
 }
 h3,
 .h3 {
-  font-size: var(--typography-h3-m);
+  font-size: var(--typography-heading-h3-m);
 }
 h4,
 .h4 {
-  font-size: var(--typography-h4-m);
+  font-size: var(--typography-heading-h4-m);
 }
 h5,
 .h5 {
-  font-size: var(--typography-h5-m);
+  font-size: var(--typography-heading-h5-m);
 }
 h6,
 .h6 {
-  font-size: var(--typography-h6-m);
+  font-size: var(--typography-heading-h6-m);
 }
 .preamble,
 .preamble p {
@@ -185,15 +184,15 @@ h6,
 }
 small,
 .small {
-  font-size: var(--typography-preamble-sm);
+  font-size: var(--typography-preamble-s);
 }
-.medium {
-  font-size: var(--typography-preamble-m);
+.large {
+  font-size: var(--typography-preamble-l);
 }
 p,
 time,
 .text {
-  font-size: var(--typography-preamble-m-l);
+  font-size: var(--typography-preamble-m);
 }
 :root {
   --theme-background: var(--default-color-rgba-white);
@@ -727,7 +726,6 @@ button {
   justify-content: center;
   border: none;
   color: rgb(var(--theme-on-surface));
-  background: rgb(var(--theme-tertiary));
   padding: var(--space-18) var(--space-24);
   font-size: var(--typography-bodytext-m);
   font-weight: 500;
@@ -1786,7 +1784,7 @@ input[type=radio] + label:before, input[type=radio] + label:after {
   padding: 10px 20px;
   display: flex;
   justify-content: center;
-  font-size: var(--typography-preamble-m);
+  font-size: var(--typography-preamble-s);
 }
 .signin__footer-legal-wrap {
   display: flex;

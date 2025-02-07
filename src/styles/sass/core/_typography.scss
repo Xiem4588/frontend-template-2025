@@ -9,9 +9,10 @@ html {
 }
 
 body {
+    // background-color: rgb(var(--theme-background));
+    // color: rgb(var(--theme-on-background));
     font-family: var(--fontfamily-body);
     font-size: var(--typography-bodytext-m);
-    color: currentColor;
     line-height: 150%;
 
     @include media-device("tablet-pro-up") {}
@@ -49,42 +50,42 @@ h6,
 
 h1,
 .h1 {
-    font-size: var(--typography-h1-m);
+    font-size: var(--typography-heading-h1-m);
 
     @include media-device("tablet-pro-up") {}
 }
 
 h2,
 .h2 {
-    font-size: var(--typography-h2-m);
+    font-size: var(--typography-heading-h2-m);
 
     @include media-device("tablet-pro-up") {}
 }
 
 h3,
 .h3 {
-    font-size: var(--typography-h3-m);
+    font-size: var(--typography-heading-h3-m);
 
     @include media-device("tablet-pro-up") {}
 }
 
 h4,
 .h4 {
-    font-size: var(--typography-h4-m);
+    font-size: var(--typography-heading-h4-m);
 
     @include media-device("tablet-pro-up") {}
 }
 
 h5,
 .h5 {
-    font-size: var(--typography-h5-m);
+    font-size: var(--typography-heading-h5-m);
 
     @include media-device("tablet-pro-up") {}
 }
 
 h6,
 .h6 {
-    font-size: var(--typography-h6-m);
+    font-size: var(--typography-heading-h6-m);
 
     @include media-device("tablet-pro-up") {}
 }
@@ -98,13 +99,13 @@ h6,
 
 small,
 .small {
-    font-size: var(--typography-preamble-sm);
+    font-size: var(--typography-preamble-s);
 
     @include media-device("tablet-pro-up") {}
 }
 
-.medium {
-    font-size: var(--typography-preamble-m);
+.large {
+    font-size: var(--typography-preamble-l);
 
     @include media-device("tablet-pro-up") {}
 }
@@ -112,7 +113,7 @@ small,
 p,
 time,
 .text {
-    font-size: var(--typography-preamble-m-l);
+    font-size: var(--typography-preamble-m);
 
     @include media-device("tablet-pro-up") {}
 }
