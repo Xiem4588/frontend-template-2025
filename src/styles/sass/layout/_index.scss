@@ -1,4 +1,6 @@
 /* Do not import the individual grids in this file. It will cause them to be added twice to the markup */
+
+@forward 'container_width';
 @forward 'layouts_1_per_row';
 @forward 'layouts_2_per_row';
 @forward 'layouts_3_per_row';

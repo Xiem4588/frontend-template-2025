@@ -1,0 +1,36 @@
+// Purpose: Define styles for Footer.
+@use "../mixins/" as *;
+
+.main__footer {
+    padding: var(--space-24);
+
+}
+.main__footer-content {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    font-size: var(--typography-preamble-m);
+}
+
+.main__footer-legal-wrap {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.main__footer-legal {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+
+    li {
+        display: inline-block;
+        padding: 0;
+        font-size: inherit;
+        line-height: inherit;
+
+        &:not(:last-child) {
+            margin-right: var(--space-24);
+        }
+    }
+}

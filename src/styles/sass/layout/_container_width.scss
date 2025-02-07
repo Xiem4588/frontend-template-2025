@@ -1,0 +1,45 @@
+@use "../mixins/" as *;
+
+[data-container-width="full"] {
+    @include mediaContainerWidth(100%);
+}
+
+[data-container-width="site"] {
+    @include mediaContainerWidth(var(--container-width-xlarge));
+}
+
+[data-container-width="site-large"] {
+    @include mediaContainerWidth(var(--container-width-2xlarge));
+}
+
+[data-container-width="site-big"] {
+    @include mediaContainerWidth(var(--container-width-3xlarge));
+}
+
+[data-container-width="bodytext"] {
+    @include mediaContainerWidth(var(--container-width-large));
+}
+
+[data-container-width="header"] {
+    @include mediaContainerWidth(var(--container-width-xlarge));
+}
+
+[data-container-width="header-large"] {
+    @include mediaContainerWidth(var(--container-width-2xlarge));
+}
+
+[data-container-width="header-big"] {
+    @include mediaContainerWidth(var(--container-width-3xlarge));
+}
+
+[data-container-width="footer"] {
+    @include mediaContainerWidth(var(--container-width-xlarge));
+}
+
+[data-container-width="footer-large"] {
+    @include mediaContainerWidth(var(--container-width-2xlarge));
+}
+
+[data-container-width="footer-big"] {
+    @include mediaContainerWidth(var(--container-width-3xlarge));
+}

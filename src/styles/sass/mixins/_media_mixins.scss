@@ -1,6 +1,6 @@
 
 // RESPONSIVE
-@mixin media-device($device) {
+@mixin mediaResponsive($device) {
     @if $device == "tablet-mini-down" {
         @media (max-width: 767px) {
             @content;
@@ -41,4 +41,16 @@
             @content;
         }
     }
+}
+
+@mixin mediaContainerWidth($width: 1439px, $minmax: "max") {
+    @if $width && $minmax == "max"  {
+        max-width: $width;
+    }
+    @else if $width && $minmax == "min" {
+        min-width: $width;
+    }
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }

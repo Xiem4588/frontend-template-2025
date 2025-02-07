@@ -113,6 +113,15 @@
   --opacity-1: 1;
 }
 
+:root {
+  --container-width-3xlarge: 1776px;
+  --container-width-2xlarge: 1512px;
+  --container-width-xlarge: 1440px;
+  --container-width-large: 1280px;
+  --container-width-medium: 1024px;
+  --container-width-small: 768px;
+}
+
 html {
   font-size: 62.5%;
   line-height: 1.6;
@@ -194,6 +203,16 @@ time,
 .text {
   font-size: var(--typography-preamble-m);
 }
+.flex-1 {
+  flex: 1;
+}
+
+@media (max-width: 1023px) {
+  .d-m-none {
+    display: none;
+  }
+}
+
 :root {
   --theme-background: var(--default-color-rgba-white);
   --theme-surface: var(--default-color-rgba-white);
@@ -835,7 +854,7 @@ select {
   color: var(--form-color-input-text);
   font-size: var(--typography-bodytext-m);
   border: 1px solid rgb(var(--border-color));
-  background-color: rgb(var(--theme-background));
+  background-color: rgb(var(--theme-surface-light));
   /* Requires the element to be wrapped in a block-element with position: relative. */
 }
 [type=text]:focus,
@@ -898,7 +917,7 @@ select:last-child {
 textarea::placeholder,
 select::placeholder {
   color: darkgrey;
-  font-size: var(--typography-bodytext-m);
+  font-size: var(--theme-on-surface-bright);
 }
 [type=text]:disabled,
 [type=password]:disabled,
@@ -1574,7 +1593,120 @@ input[type=radio] + label:before, input[type=radio] + label:after {
   color: rgb(var(--theme-on-quarternary)) !important;
 }
 
+.main__header {
+  padding: var(--space-24);
+}
+
+.main__footer {
+  padding: var(--space-24);
+}
+
+.main__footer-content {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  font-size: var(--typography-preamble-m);
+}
+
+.main__footer-legal-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.main__footer-legal {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+}
+.main__footer-legal li {
+  display: inline-block;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+.main__footer-legal li:not(:last-child) {
+  margin-right: var(--space-24);
+}
+
 /* Do not import the individual grids in this file. It will cause them to be added twice to the markup */
+[data-container-width=full] {
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-container-width=site] {
+  max-width: var(--container-width-xlarge);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-container-width=site-large] {
+  max-width: var(--container-width-2xlarge);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-container-width=site-big] {
+  max-width: var(--container-width-3xlarge);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-container-width=bodytext] {
+  max-width: var(--container-width-large);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-container-width=header] {
+  max-width: var(--container-width-xlarge);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-container-width=header-large] {
+  max-width: var(--container-width-2xlarge);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-container-width=header-big] {
+  max-width: var(--container-width-3xlarge);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-container-width=footer] {
+  max-width: var(--container-width-xlarge);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-container-width=footer-large] {
+  max-width: var(--container-width-2xlarge);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-container-width=footer-big] {
+  max-width: var(--container-width-3xlarge);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*{ "key":"one-per-row", "value":"", "name":"one Per Row", "columns":11 }*/
 [data-layout-smart=one-per-row] {
   display: grid;
@@ -1661,17 +1793,18 @@ input[type=radio] + label:before, input[type=radio] + label:after {
   grid-column: 1/5;
 }
 
-.signin {
+.main-signin {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-.signin__content {
+
+.main-signin__content {
   display: grid;
   flex: 1;
 }
-.signin__content--column {
+.main-signin__content--column {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1679,12 +1812,7 @@ input[type=radio] + label:before, input[type=radio] + label:after {
   gap: var(--space-50);
   position: relative;
 }
-@media (max-width: 1023px) {
-  .signin__content .d-m-none {
-    display: none;
-  }
-}
-.signin__content-wrapper {
+.main-signin__content-wrapper {
   display: flex;
   flex-direction: column;
   padding: var(--space-50) 0 0;
@@ -1693,19 +1821,19 @@ input[type=radio] + label:before, input[type=radio] + label:after {
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  .signin__content-wrapper {
+  .main-signin__content-wrapper {
     gap: var(--space-100);
     margin-bottom: 0px;
   }
 }
-.signin__content-header {
+.main-signin__content-header {
   text-align: center;
 }
-.signin__content-header .signin__content-logo {
+.main-signin__content-header .main-signin__content-logo {
   display: inline-block;
   color: currentColor;
 }
-.signin__content-main {
+.main-signin__content-main {
   width: 381px;
   padding: 0 var(--space-24);
   display: flex;
@@ -1713,24 +1841,25 @@ input[type=radio] + label:before, input[type=radio] + label:after {
   justify-content: center;
   gap: var(--space-20);
 }
-.signin__content-footer {
+.main-signin__content-footer {
   display: flex;
   padding-top: 20px;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
 }
-.signin__content-footer p {
+.main-signin__content-footer p {
   margin: 0;
   flex: 1;
   text-align: center;
 }
-.signin__promo-img {
+
+.main-signin__promo-img {
   height: 100%;
   width: 100%;
   position: absolute;
 }
-.signin__promo-img img {
+.main-signin__promo-img img {
   min-width: 100%;
   max-width: 100%;
   min-height: 100%;
@@ -1739,20 +1868,22 @@ input[type=radio] + label:before, input[type=radio] + label:after {
   object-position: center center;
   display: block;
 }
-.signin__form {
+
+.main-signin__form {
   display: inherit;
   flex-direction: inherit;
   gap: inherit;
   align-self: stretch;
 }
-.signin__field-group {
+
+.main-signin__field-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
   align-self: stretch;
 }
-.signin__field-group label {
+.main-signin__field-group label {
   display: block;
   margin: 0;
   cursor: pointer;
@@ -1760,50 +1891,20 @@ input[type=radio] + label:before, input[type=radio] + label:after {
   text-align: left;
   font-size: var(--typography-bodytext-m);
 }
-.signin__secondary-field {
+
+.main-signin__secondary-field {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
-  color: rgb(var(--theme-on-surface));
 }
-.signin__action-wrap {
+
+.main-signin__action-wrap {
   flex: 1;
 }
-.signin__action-wrap--align-right {
+.main-signin__action-wrap--align-right {
   text-align: right;
-}
-.signin__footer {
-  background: rgb(var(--theme-background));
-  width: 100%;
-  padding: 0;
-  color: rgb(var(--theme-on-background));
-}
-.signin__footer-content {
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center;
-  font-size: var(--typography-preamble-s);
-}
-.signin__footer-legal-wrap {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-.signin__footer-legal {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0;
-}
-.signin__footer-legal li {
-  display: inline-block;
-  padding: 0;
-  font-size: inherit;
-  line-height: inherit;
-}
-.signin__footer-legal li:not(:last-child) {
-  margin-right: var(--space-24);
 }
 
 /*# sourceMappingURL=main.css.map */

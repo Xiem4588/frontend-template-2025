@@ -1,0 +1,6 @@
+// Purpose: Define styles for Header.
+@use "../mixins/" as *;
+
+.main__header {
+    padding: var(--space-24);
+}

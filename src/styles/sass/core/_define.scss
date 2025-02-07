@@ -1,0 +1,12 @@
+// Purpose: Define the css
+@use "../mixins" as *;
+
+.flex-1 {
+    flex: 1;
+}
+
+.d-m-none {
+    @include mediaResponsive('tablet-pro-down') {
+        display: none;
+    }
+}

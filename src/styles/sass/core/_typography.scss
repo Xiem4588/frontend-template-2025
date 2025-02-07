@@ -15,7 +15,7 @@ body {
     font-size: var(--typography-bodytext-m);
     line-height: 150%;
 
-    @include media-device("tablet-pro-up") {}
+    @include mediaResponsive("tablet-pro-up") {}
 }
 
 *, ::after, ::before {
@@ -52,62 +52,62 @@ h1,
 .h1 {
     font-size: var(--typography-heading-h1-m);
 
-    @include media-device("tablet-pro-up") {}
+    @include mediaResponsive("tablet-pro-up") {}
 }
 
 h2,
 .h2 {
     font-size: var(--typography-heading-h2-m);
 
-    @include media-device("tablet-pro-up") {}
+    @include mediaResponsive("tablet-pro-up") {}
 }
 
 h3,
 .h3 {
     font-size: var(--typography-heading-h3-m);
 
-    @include media-device("tablet-pro-up") {}
+    @include mediaResponsive("tablet-pro-up") {}
 }
 
 h4,
 .h4 {
     font-size: var(--typography-heading-h4-m);
 
-    @include media-device("tablet-pro-up") {}
+    @include mediaResponsive("tablet-pro-up") {}
 }
 
 h5,
 .h5 {
     font-size: var(--typography-heading-h5-m);
 
-    @include media-device("tablet-pro-up") {}
+    @include mediaResponsive("tablet-pro-up") {}
 }
 
 h6,
 .h6 {
     font-size: var(--typography-heading-h6-m);
 
-    @include media-device("tablet-pro-up") {}
+    @include mediaResponsive("tablet-pro-up") {}
 }
 
 .preamble,
 .preamble p {
     font-size: var(--typography-preamble-m);
 
-    @include media-device("tablet-pro-up") {}
+    @include mediaResponsive("tablet-pro-up") {}
 }
 
 small,
 .small {
     font-size: var(--typography-preamble-s);
 
-    @include media-device("tablet-pro-up") {}
+    @include mediaResponsive("tablet-pro-up") {}
 }
 
 .large {
     font-size: var(--typography-preamble-l);
 
-    @include media-device("tablet-pro-up") {}
+    @include mediaResponsive("tablet-pro-up") {}
 }
 
 p,
@@ -115,5 +115,5 @@ time,
 .text {
     font-size: var(--typography-preamble-m);
 
-    @include media-device("tablet-pro-up") {}
+    @include mediaResponsive("tablet-pro-up") {}
 }
