@@ -1,8 +1,18 @@
 //  Purpose: Define button styles
 @use "../mixins/" as *;
 
-.button,
 button {
+    position: relative;
+    outline: none;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.btn-main {
     position: relative;
     outline: none;
     cursor: pointer;
@@ -10,12 +20,16 @@ button {
     align-items: center;
     justify-content: center;
     border: none;
-    color: rgb(var(--theme-on-surface));
-    padding: var(--space-18) var(--space-24);
+    color: currentColor;
+    padding: var(--space-12) var(--space-24);
     font-size: var(--typography-bodytext-m);
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: all 0.2s;
     box-shadow: -6px 6px 0px 0px rgb(var(--border-color));
+
+    @include mediaResponsive("tablet-pro-up") {
+        padding: var(--space-18) var(--space-24);
+    }
 
     &:disabled {
         opacity: 0.6;
@@ -25,18 +39,7 @@ button {
     &:hover:not([disabled]):not(:focus),
     &:focus,
     &:disabled {
-        --button-shadow-position: -2px 2px;
-        transform: translate(-4px, 4px);
-    }
-
-    &:hover:not([disabled]):not(:focus)::after,
-    &:focus::after {
-        transform: translateX(var(--space-8));
-    }
-
-    &:focus {
-        border-color: rgb(var(--border-color));
-        box-shadow: -6px 6px 0px 0px rgb(var(--border-color)), 0 4px 20px 0 rgb(var(--border-color));
+        transform: translate(3px, 3px);
     }
 
     &.button--primary {

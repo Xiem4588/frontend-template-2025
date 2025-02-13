@@ -4,7 +4,7 @@ export default class MainComponent extends HTMLElement {
             <div data-background="surfaceBright" class="main-signin__content--column column-2-first">
                 <div class="main-signin__content-wrapper">
                     <header class="main-signin__content-header">
-                        <a class="main-signin__content-logo" href="#">
+                        <a class="main-signin__content-logo" href="/">
                             <svg width="151" height="37" viewBox="0 0 151 37" xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                     <path
@@ -50,7 +50,7 @@ export default class MainComponent extends HTMLElement {
                                     <a href="#">Forgot password?</a>
                                 </div>
                             </div>
-                            <button type="button" class="button">Continue</button>
+                            <button type="button" class="btn-main">Continue</button>
                             <input name="" type="hidden" value="">
                         </form>
 

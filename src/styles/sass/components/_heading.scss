@@ -1,2 +1,60 @@
 //  Purpose: Define heading styles
 @use "../mixins/" as *;
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-weight: 600;
+    line-height: 150%;
+}
+
+h1,
+.h1 {
+    font-size: var(--typography-heading-h1-m);
+
+    @include mediaResponsive("tablet-pro-up") {}
+}
+
+h2,
+.h2 {
+    font-size: var(--typography-heading-h2-m);
+
+    @include mediaResponsive("tablet-pro-up") {}
+}
+
+h3,
+.h3 {
+    font-size: var(--typography-heading-h3-m);
+
+    @include mediaResponsive("tablet-pro-up") {}
+}
+
+h4,
+.h4 {
+    font-size: var(--typography-heading-h4-m);
+
+    @include mediaResponsive("tablet-pro-up") {}
+}
+
+h5,
+.h5 {
+    font-size: var(--typography-heading-h5-m);
+
+    @include mediaResponsive("tablet-pro-up") {}
+}
+
+h6,
+.h6 {
+    font-size: var(--typography-heading-h6-m);
+
+    @include mediaResponsive("tablet-pro-up") {}
+}

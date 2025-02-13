@@ -1,0 +1,50 @@
+// Animation mixin
+
+@mixin link-animation($color: rgb(var(--theme-on-background)), $height: 2px) {
+    &::before {
+        content: '';
+        width: 0%;
+        position: absolute;
+        height: $height;
+        bottom: 0;
+        left: 0;
+        transition: all .2s;
+        background: $color;
+        border: 0;
+        display: block;
+    }
+}
+
+@mixin icon-arrow($color: currentColor, $rotate: 45deg, $left: inherit) {
+    &::after {
+        content: '';
+        display: block;
+        flex-shrink: 0;
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid $color;
+        border-right: 2px solid $color;
+        transition: transform 0.3s;
+        transform: translateY(-50%) rotate($rotate);
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: inherit;
+        @if($left == "left") {
+            left: 0;
+        }
+    }
+}
+
+// visually-hidden mixin
+@mixin visually-hidden() {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}

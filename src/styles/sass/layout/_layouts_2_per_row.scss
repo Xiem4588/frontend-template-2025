@@ -1,20 +1,14 @@
 @use "../mixins/" as *;
 
 /*{ "key":"two-per-row", "value":"", "name":"two Per Row", "columns":2 }*/
-[data-layout-smart='two-per-row'] {
-
+[data-layout-smart="two-per-row"] {
     @include mediaResponsive("tablet-pro-up") {
         @include grid-columns($columns: 2, $min: 0px, $max: 1fr, $gap: 24px);
     }
 
-    &[data-layout-use-full-bleed=false] {
+    &[data-layout-use-full-bleed="false"] {
         @include mediaResponsive("tablet-pro-up") {
-            gap: 0;
+        gap: 0;
         }
     }
-
-    .column-2-all {
-        grid-column: 1 / 3;
-    }
-
 }

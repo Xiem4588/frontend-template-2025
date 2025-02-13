@@ -1,5 +1,10 @@
 @use "../mixins/" as *;
 
+[data-border-top] {
+    border-top: 1px solid rgb(var(--border-color), .1);
+    padding-top: var(--space-8);
+}
+
 .border-background {
     --border-color: var(--theme-background);
 }

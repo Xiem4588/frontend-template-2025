@@ -5,6 +5,10 @@
     flex: 1;
 }
 
+.d-none {
+    display: none;
+}
+
 .d-m-none {
     @include mediaResponsive('tablet-pro-down') {
         display: none;

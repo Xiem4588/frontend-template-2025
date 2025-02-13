@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start Page</title>
     <link rel="stylesheet" href="src/styles/css/main.css">
-
 </head>
 
 <body>
@@ -15,10 +14,10 @@
         <header-component class="main-header" data-theme="tertiary-100"></header-component>
 
         <!-- Main Content Component -->
-        <main-component class="main__content flex-1" data-theme="white-100"></main-component>
+        <main-component class="main-content flex-1" data-theme="white-100"></main-component>
 
         <!-- Footer Component -->
-        <footer-component class="main-footer" data-background=""></footer-component>
+        <footer-component class="main-footer" data-background="surfaceBright"></footer-component>
     </div>
 
     <script type="module">
@@ -30,6 +29,8 @@
         customElements.define('main-component', MainComponent);
         customElements.define('footer-component', FooterComponent);
     </script>
+
+    <script src="./src/js/main.js" type="module"></script>
 </body>
 
 </html>

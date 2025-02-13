@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="src/styles/css/main.css">
-
 </head>
 
 <body>
@@ -21,12 +20,14 @@
     <script type="module">
         import HeaderComponent from './src/components/HeaderComponent.ts';
         import MainComponent from './src/pages/Login.ts';
-        import FooterComponent from './src/components/FooterComponent.ts';
+        import FooterComponent from './src/components/FooterLoginComponent.ts';
 
         customElements.define('header-component', HeaderComponent);
         customElements.define('main-component', MainComponent);
         customElements.define('footer-component', FooterComponent);
     </script>
+
+    <script src="./src/js/main.js" type="module"></script>
 </body>
 
 </html>
