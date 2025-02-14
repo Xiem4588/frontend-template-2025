@@ -41,39 +41,40 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Lấy danh sách các tùy chọn theme
+// Get theme
 const themeOptions = document.querySelectorAll('.theme-options li');
-    // Hàm áp dụng theme
+
+// Apply theme
 function applyTheme(mode) {
     if (mode === 'dark') {
         document.documentElement.setAttribute('data-site-theme', 'dark');
     } else if (mode === 'light') {
         document.documentElement.setAttribute('data-site-theme', 'light');
     } else {
-        // 'system' mode: Theo theme mặc định của hệ điều hành
+        // 'system' mode default
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         document.documentElement.setAttribute('data-site-theme', prefersDark ? 'dark' : 'light');
     }
 }
 
-// Hàm cập nhật trạng thái active
-function updateActiveTheme(selectedMode) {
+// Change theme active
+const updateActiveTheme = (selectedMode) => {
     themeOptions.forEach((option) => {
         option.classList.toggle('active', option.getAttribute('data-site-theme') === selectedMode);
     });
 }
 
-// Lắng nghe sự kiện click
+// Event click
 themeOptions.forEach((option) => {
     option.addEventListener('click', () => {
         const selectedMode = option.getAttribute('data-site-theme');
-        localStorage.setItem('themeMode', selectedMode); // Lưu lựa chọn vào localStorage
+        localStorage.setItem('themeMode', selectedMode); // save localStorage
         applyTheme(selectedMode);
         updateActiveTheme(selectedMode);
     });
 });
 
-// Áp dụng theme khi tải trang
+// Apply theme when loading page
 const savedMode = localStorage.getItem('themeMode') || 'system';
 applyTheme(savedMode);
 updateActiveTheme(savedMode);
