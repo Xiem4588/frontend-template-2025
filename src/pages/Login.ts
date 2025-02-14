@@ -1,10 +1,10 @@
 export default class MainComponent extends HTMLElement {
     innerHTML = `
         <div data-layout-smart="three-per-row" data-layout-use-full-bleed="false" data-container-width="full">
-            <div data-background="surfaceBright" class="main-signin__content--column column-2-first">
-                <div class="main-signin__content-wrapper">
-                    <header class="main-signin__content-header">
-                        <a class="main-signin__content-logo" href="/">
+            <div data-background="surfaceBright" class="main-content__signin--column column-2-first">
+                <div class="main-content__signin-wrapper">
+                    <header class="main-content__signin-header">
+                        <a class="main-content__signin-logo" href="/">
                             <svg width="151" height="37" viewBox="0 0 151 37" xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                     <path
@@ -31,8 +31,8 @@ export default class MainComponent extends HTMLElement {
                             </svg>
                         </a>
                     </header>
-                    <section class="main-signin__content-main" aria-label="Main content" role="main">
-                        <div class="main-signin__content-heading">
+                    <section class="main-content__signin-main" aria-label="Main content" role="main">
+                        <div class="main-content__signin-heading">
                             <h1 class="h4">Sign in</h1>
                         </div>
 
@@ -54,7 +54,7 @@ export default class MainComponent extends HTMLElement {
                             <input name="" type="hidden" value="">
                         </form>
 
-                        <div class="main-signin__content-footer">
+                        <div class="main-content__signin-footer">
                             <p>Don't have an account? <a href="#">Request a demo</a></p>
                         </div>
                     </section>
@@ -63,7 +63,7 @@ export default class MainComponent extends HTMLElement {
                     </nav>
                 </div>
             </div>
-            <div data-background="" class="main-signin__content--column d-m-none">
+            <div data-background="" class="main-content__signin--column d-m-none">
                 <div class="main-signin__promo-img">
                     <img src="./src/assets/images/Content-Stage.png" alt="">
                 </div>

@@ -1,14 +1,7 @@
 // Purpose: Define styles for login page.
 @use "../mixins/" as *;
 
-.main-signin {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-signin__content {
+.main-content__signin {
     display: grid;
     flex: 1;
 
@@ -37,7 +30,7 @@
 
     &-header {
         text-align: center;
-        .main-signin__content-logo {
+        .main-content__signin-logo {
             display: inline-block;
             color: currentColor;
         }

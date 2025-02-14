@@ -1,6 +1,6 @@
 // Animation mixin
 
-@mixin link-animation($color: rgb(var(--theme-on-background)), $height: 2px) {
+@mixin link-animation($color: currentColor, $height: 2px) {
     &::before {
         content: '';
         width: 0%;
