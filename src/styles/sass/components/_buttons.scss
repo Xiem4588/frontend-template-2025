@@ -4,11 +4,11 @@
 :root {
     --button-border-width: 1px;
     --button-border-style: solid;
-    --button-border-radius: var(--space-4);
+    --button-border-radius: 0;
     --button-padding: var(--space-12) var(--space-24);
     --button-font-weight: 700;
     --button-font-size: var(--typography-bodytext-m);
-    --button-line-height: var(--typography-lineheight-150);
+    --button-line-height: 1.5;
     --button-disabled-opacity: 0.4;
     --button-hover-background: var(--color-gray-300);
     --button-hover-color: var(--color-black);
@@ -25,7 +25,7 @@
     font-weight: var(--button-font-weight);
     font-size: var(--button-font-size);
     line-height: var(--button-line-height);
-    // box-shadow: -6px 6px 0px 0px rgb(var(--button-shadow-background, --border-color), 0.6);
+    box-shadow: -5px 5px 0px 0px rgb(var(--button-shadow-background, --border-color), 0.6);
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -43,7 +43,7 @@
     &:hover:not([disabled]):not(:focus),
     &:focus,
     &:disabled {
-        transform: translate(-3px, 3px);
+        transform: translate(-2px, 2px);
     }
 }
 

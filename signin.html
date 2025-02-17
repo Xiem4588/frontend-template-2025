@@ -4,20 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start Page</title>
+    <title>Signin</title>
     <link rel="stylesheet" href="src/styles/css/main.css">
 
     <script type="module">
-        import './src/Features/SiteHeader.ts';
-        import './src/Features/HeroBlock.ts';
-        import './src/Features/SiteFooter.ts';
+        import './src/Features/SigninBlock.ts';
+        import './src/Features/SigninFooter.ts';
     </script>
 </head>
 
 <body>
-    <site-header class="main-header" data-header-fixed-top></site-header>
-    <main class="main-content"><hero-block></hero-block></main>
-    <site-footer class="main-footer"></site-footer>
+    <signin-block class="main-content main-content__signin"></signin-block>
+    <signin-footer class="main-footer" data-background></signin-footer>
 
     <script src="./src/js/main.js" type="module"></script>
 </body>

@@ -1,5 +1,6 @@
 
 import './styles/_new_block.scss';
+import HeroBlock from './HeroBlock'
 
 export default class DefaultBlock extends HTMLElement {
     innerHTML = `

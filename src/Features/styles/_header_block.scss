@@ -1,6 +1,10 @@
 // Purpose: Define styles for Header.
 @use '../../styles/sass/mixins/' as *;
 
+[data-mega-menu-visible="true"] {
+    overflow: hidden;
+}
+
 [data-header-fixed-top] {
     position: fixed;
     top: 0;
@@ -10,8 +14,9 @@
 }
 
 .main-header {
-    padding: var(--space-24);
     background: rgb(var(--theme-background), 0.9);
+    padding: var(--space-24);
+    display: block;
 
     @include media-responsive("tablet-pro-up") {
         padding: 0 var(--space-24);
@@ -275,7 +280,7 @@
         position: absolute;
         top: var(--space-16);
         right: 0;
-        padding: 0;
+        padding: var(--space-4);
         width: auto;
 
         @include link-animation;
@@ -351,10 +356,10 @@
 
     .main__header-nav-center {
         position: fixed;
-        top: 88px;
+        top: var(--header-height);
         left: 0;
         width: 100%;
-        height: calc(100vh - 88px);
+        height: calc(100vh - var(--header-height));
         background: rgb(var(--theme-background));
         color: rgb(var(--theme-on-background));
         padding: var(--space-24);

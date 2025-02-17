@@ -4,3 +4,7 @@
 @use 'helper';
 @use 'components';
 @use 'layout';
+
+main {
+    flex-grow: 1;
+}

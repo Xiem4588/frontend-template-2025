@@ -13,7 +13,7 @@ export default class SiteHeader extends HTMLElement {
                 <div class="main__header-nav-center">
                     <ul class="mega-menu">
                         <li class="mega-menu__item" data-mega-menu-item="true" aria-hidden="true">
-                            <a class="mega-menu__item-button" data-item-button href="/login.html">Menu 1</a>
+                            <a class="mega-menu__item-button" data-item-button href="/signin.html">Menu 1</a>
                             <div class="mega-menu__submenu" data-mega-menu-submenu data-background="">
                                 <div class="mega-menu__submenu-container" data-container-width="header-big">
                                     <button type="button" class="mega-menu__submenu-go-back" data-button-go-back>
@@ -42,7 +42,7 @@ export default class SiteHeader extends HTMLElement {
                             </div>
                         </li>
                         <li class="mega-menu__item" data-mega-menu-item="true" aria-hidden="true">
-                            <a class="mega-menu__item-button" data-item-button href="/login.html">Menu 2</a>
+                            <a class="mega-menu__item-button" data-item-button href="/signin.html">Menu 2</a>
                             <div class="mega-menu__submenu" data-mega-menu-submenu data-background="">
                                 <div class="mega-menu__submenu-container" data-container-width="header-big">
                                     <button type="button" class="mega-menu__submenu-go-back" data-button-go-back>
@@ -61,14 +61,14 @@ export default class SiteHeader extends HTMLElement {
                             </div>
                         </li>
                         <li class="mega-menu__item" data-mega-menu-item="true" aria-hidden="true">
-                            <a class="mega-menu__item-button" data-item-button href="/login.html">Menu 3</a>
+                            <a class="mega-menu__item-button" data-item-button href="/signin.html">Menu 3</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="main__header-nav-last">
                     <button type="button" class="btn button--primary">
-                        <span class="btn-content-text">Login</span>
+                        <span class="btn-content-text">Signin</span>
                     </button>
                 </div>
 
@@ -83,3 +83,5 @@ export default class SiteHeader extends HTMLElement {
         </div>
     `;
 }
+
+customElements.define('site-header', SiteHeader);

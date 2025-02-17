@@ -12,6 +12,9 @@ body {
     font-family: var(--font-family-body);
     font-size: var(--typography-bodytext-m);
     line-height: 1.5;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
 
     @include media-responsive("tablet-pro-up") {}
 }
@@ -27,7 +30,7 @@ a {
     text-decoration: none;
     position: relative;
     display: inline-block;
-    padding-bottom: var(--space-4);
+    font-weight: 500;
 
     @include link-animation;
 
@@ -90,7 +93,7 @@ h1,.h1 {
     font-weight: bold;
     line-height: 1.2;
     font-family: var(--font-family-headings);
-    font-size: var(--typography-heading-h1-m);
+    font-size: var(--typography-heading-2xl);
 
     @include media-responsive("tablet-pro-up") {}
 }
@@ -99,7 +102,7 @@ h2,.h2 {
     font-weight: bold;
     line-height: 1.2;
     font-family: var(--font-family-headings);
-    font-size: var(--typography-heading-h2-m);
+    font-size: var(--typography-heading-xl);
 
     @include media-responsive("tablet-pro-up") {}
 }
@@ -108,7 +111,7 @@ h3,.h3 {
     font-weight: bold;
     line-height: 1.2;
     font-family: var(--font-family-headings);
-    font-size: var(--typography-heading-h3-m);
+    font-size: var(--typography-heading-l);
 
     @include media-responsive("tablet-pro-up") {}
 }
@@ -117,7 +120,7 @@ h4,.h4 {
     font-weight: bold;
     line-height: 1.2;
     font-family: var(--font-family-headings);
-    font-size: var(--typography-heading-h4-m);
+    font-size: var(--typography-heading-m);
 
     @include media-responsive("tablet-pro-up") {}
 }
@@ -126,13 +129,13 @@ h5,.h5 {
     font-weight: bold;
     line-height: 1.2;
     font-family: var(--font-family-headings);
-    font-size: var(--typography-heading-h5-m);
+    font-size: var(--typography-heading-s);
 
     @include media-responsive("tablet-pro-up") {}
 }
 
 h6,.h6 {
-    font-size: var(--typography-heading-h6-m);
+    font-size: var(--typography-heading-xs);
 
     @include media-responsive("tablet-pro-up") {}
 }

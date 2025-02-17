@@ -1,10 +1,11 @@
 export const headerMenu = () => {
     // Button Menu MB
-    document.querySelector('.btn__menu-mb').addEventListener('click', (e) => {
+    document.querySelector('.btn__menu-mb button').addEventListener('click', (e) => {
         e.stopPropagation();
         const mainHeader = document.querySelector('.main__header');
         const isHidden = mainHeader.getAttribute('aria-hidden') === 'true';
         mainHeader.setAttribute('aria-hidden', isHidden ? 'false' : 'true');
+        document.documentElement.setAttribute('data-mega-menu-visible', isHidden ? 'true' : 'false');
     });
 
     // Go Back
@@ -30,15 +31,20 @@ export const headerMenu = () => {
 
         if (subMenu) {
             const hasMegaMenuSubmenu = subMenu.parentElement.querySelector(`[data-mega-menu-submenu], ${!isDesktop ? '[data-mega-menu-submenu-item-submenu]' : null}`);
+            const isVisible = subMenu.parentElement.getAttribute('aria-hidden') === 'false';
+            //
             if (hasMegaMenuSubmenu) {
                 e.preventDefault();
                 e.stopPropagation();
             }
-            const isVisible = subMenu.parentElement.getAttribute('aria-hidden') === 'false';
+            //
             hideAll(!!e.target.closest('[data-submenu-item-button]'));
             subMenu.parentElement.setAttribute('aria-hidden', isVisible ? 'true' : 'false');
+            //
+            document.documentElement.setAttribute('data-mega-menu-visible', !isVisible ? 'true' : 'false');
         } else if (isDesktop && !e.target.closest('[data-mega-menu-submenu]')) {
             hideAll();
+            document.documentElement.setAttribute('data-mega-menu-visible', 'false');
         }
     });
 
