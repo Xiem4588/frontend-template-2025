@@ -1,14 +1,14 @@
 @use "../mixins/" as *;
 
-/*{ "key":"two-per-row", "value":"", "name":"two Per Row", "columns":2 }*/
-[data-layout-smart="two-per-row"] {
-    @include mediaResponsive("tablet-pro-up") {
+/*{ "key":"2-per-row", "value":"", "name":"two Per Row", "columns":2 }*/
+[data-layout-smart="2-per-row"] {
+    @include grid-columns($columns: 1, $min: 0px, $max: 1fr, $gap: 24px);
+
+    @include media-responsive("tablet-pro-up") {
         @include grid-columns($columns: 2, $min: 0px, $max: 1fr, $gap: 24px);
     }
 
     &[data-layout-use-full-bleed="false"] {
-        @include mediaResponsive("tablet-pro-up") {
         gap: 0;
-        }
     }
 }

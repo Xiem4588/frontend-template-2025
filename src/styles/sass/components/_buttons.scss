@@ -1,35 +1,39 @@
 //  Purpose: Define button styles
 @use "../mixins/" as *;
 
-button {
-    position: relative;
-    outline: none;
-    border: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s;
-    cursor: pointer;
+:root {
+    --button-border-width: 1px;
+    --button-border-style: solid;
+    --button-border-radius: var(--space-4);
+    --button-padding: var(--space-12) var(--space-24);
+    --button-font-weight: 700;
+    --button-font-size: var(--typography-bodytext-m);
+    --button-line-height: var(--typography-lineheight-150);
+    --button-disabled-opacity: 0.4;
+    --button-hover-background: var(--color-gray-300);
+    --button-hover-color: var(--color-black);
 }
 
-.btn-main {
+.btn {
+    border-width: var(--button-border-width);
+    border-style: var(--button-border-style);
+    border-color: rgb(var(--button-background));
+    border-radius: var(--button-border-radius);
+    background: rgb(var(--button-background));
+    padding: var(--button-padding);
+    color: rgb(var(--button-text-color));
+    font-weight: var(--button-font-weight);
+    font-size: var(--button-font-size);
+    line-height: var(--button-line-height);
+    // box-shadow: -6px 6px 0px 0px rgb(var(--button-shadow-background, --border-color), 0.6);
     position: relative;
-    outline: none;
-    cursor: pointer;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: none;
-    color: currentColor;
-    padding: var(--space-12) var(--space-24);
-    font-size: var(--typography-bodytext-m);
-    font-weight: 500;
+    cursor: pointer;
+    outline: none;
     transition: all 0.2s;
-    box-shadow: -6px 6px 0px 0px rgb(var(--border-color));
-
-    @include mediaResponsive("tablet-pro-up") {
-        padding: var(--space-18) var(--space-24);
-    }
+    text-decoration: none;
 
     &:disabled {
         opacity: 0.6;
@@ -39,30 +43,71 @@ button {
     &:hover:not([disabled]):not(:focus),
     &:focus,
     &:disabled {
-        transform: translate(3px, 3px);
+        transform: translate(-3px, 3px);
     }
+}
 
-    &.button--primary {
-        @include button-primary;
-    }
+// Color Variants, [ButtonColors.cs]
+.button--primary {
+    @include button-primary;
+}
 
-    &.button--tertiary {
-        @include button-tertiary;
-    }
+.button--secondary {
+    @include button-secondary;
+}
 
-    &.button--black {
-        @include button-black;
-    }
+.button--tertiary {
+    @include button-tertiary;
+}
 
-    &.button--white {
-        @include button-white;
-    }
-    &.button--blue {
-        @include button-blue;
-    }
-    *.button--yellow {
-        @include button-yellow;
-    }
+.button--info {
+    @include button-info;
+}
+
+.button--success {
+    @include button-success;
+}
+
+.button--accent {
+    @include button-accent;
+}
+
+.button--error {
+    @include button-error;
+}
+
+.button--warning {
+    @include button-warning;
+}
+
+// Variants [ButtonVariants.cs]
+
+.button--text {
+    border: none;
+    background: transparent;
+    color: var(--button-background);
+}
+
+.button--outlined {
+    --button-outlined-hover-background: var(--button-hover-background);
+    --button-outlined-hover-color: var(--button-hover-color);
+    --button-outlined-hover-border-color: var(--button-outlined-hover-background);
+
+    background: transparent;
+    color: var(--button-background);
+}
+
+// Additional modifiers
+
+.button--sm {
+    --button-font-size: var(--font-size-small);
+    --button-padding: var(--space-8) var(--space-16);
+}
+
+.button--icon {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-4);
 }
 
 // end button

@@ -1,7 +1,7 @@
 @use 'variables';
 @use 'core';
 @use 'themes';
+@use 'helper';
 @use 'components';
 @use 'layout';
-@use './pages/login';
-@use './pages/start';
+@use 'pages';

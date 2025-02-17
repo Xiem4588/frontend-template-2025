@@ -1,0 +1,113 @@
+@use "../mixins/" as *;
+
+[data-background] {
+    --theme-overlay-multiplier: var(--theme-background-overlay-multiplier);
+    background: rgb(var(--theme-background)) !important;
+    color: rgb(var(--theme-on-background)) !important;
+}
+
+[data-background="surface"] {
+    --theme-overlay-multiplier: var(--theme-surface-overlay-multiplier);
+    background: rgb(var(--theme-surface)) !important;
+    color: rgb(var(--theme-on-surface)) !important;
+}
+
+[data-background="surface-bright"] {
+    --theme-overlay-multiplier: var(
+        --theme-surface-bright-overlay-multiplier
+    );
+    background: rgb(var(--theme-surface-bright)) !important;
+    color: rgb(var(--theme-on-surface-bright)) !important;
+}
+
+[data-background="surface-light"] {
+    --theme-overlay-multiplier: var(--theme-surface-light-overlay-multiplier);
+    background: rgb(var(--theme-surface-light)) !important;
+    color: rgb(var(--theme-on-surface-light)) !important;
+}
+
+[data-background="surface-variant"] {
+    --theme-overlay-multiplier: var(
+        --theme-surface-variant-overlay-multiplier
+    );
+    background: rgb(var(--theme-surface-variant)) !important;
+    color: rgb(var(--theme-on-surface-variant)) !important;
+}
+
+[data-background="primary"] {
+    --theme-overlay-multiplier: var(--theme-primary-overlay-multiplier);
+    background: rgb(var(--theme-primary)) !important;
+    color: rgb(var(--theme-on-primary)) !important;
+}
+
+[data-background="primary-darken-1"] {
+    --theme-overlay-multiplier: var(
+        --theme-primary-darken-1-overlay-multiplier
+    );
+    background: rgb(var(--theme-primary-darken-1)) !important;
+    color: rgb(var(--theme-on-primary-darken-1)) !important;
+}
+
+[data-background="secondary"] {
+    --theme-overlay-multiplier: var(--theme-secondary-overlay-multiplier);
+    background: rgb(var(--theme-secondary)) !important;
+    color: rgb(var(--theme-on-secondary)) !important;
+}
+
+[data-background="secondary-darken-1"] {
+    --theme-overlay-multiplier: var(
+        --theme-secondary-darken-1-overlay-multiplier
+    );
+    background: rgb(var(--theme-secondary-darken-1)) !important;
+    color: rgb(var(--theme-on-secondary-darken-1)) !important;
+}
+
+[data-background="error"] {
+    --theme-overlay-multiplier: var(--theme-error-overlay-multiplier);
+    background: rgb(var(--theme-error)) !important;
+    color: rgb(var(--theme-on-error)) !important;
+}
+
+[data-background="info"] {
+    --theme-overlay-multiplier: var(--theme-info-overlay-multiplier);
+    background: rgb(var(--theme-info)) !important;
+    color: rgb(var(--theme-on-info)) !important;
+}
+
+[data-background="success"] {
+    --theme-overlay-multiplier: var(--theme-success-overlay-multiplier);
+    background: rgb(var(--theme-success)) !important;
+    color: rgb(var(--theme-on-success)) !important;
+}
+
+[data-background="warning"] {
+    --theme-overlay-multiplier: var(--theme-warning-overlay-multiplier);
+    background: rgb(var(--theme-warning)) !important;
+    color: rgb(var(--theme-on-warning)) !important;
+}
+
+[data-background="surface-variant-alt"] {
+    --theme-overlay-multiplier: var(
+        --theme-surface-variant-alt-overlay-multiplier
+    );
+    background: rgb(var(--theme-surface-variant-alt)) !important;
+    color: rgb(var(--theme-on-surface-variant-alt)) !important;
+}
+
+[data-background="tertiary"] {
+    --theme-overlay-multiplier: var(--theme-tertiary-overlay-multiplier);
+    background: rgb(var(--theme-tertiary)) !important;
+    color: rgb(var(--theme-on-tertiary)) !important;
+}
+
+[data-background="accent"] {
+    --theme-overlay-multiplier: var(--theme-accent-overlay-multiplier);
+    background: rgb(var(--theme-accent)) !important;
+    color: rgb(var(--theme-on-accent)) !important;
+}
+
+[data-background="quaternary"] {
+    --theme-overlay-multiplier: var(--theme-quaternary-overlay-multiplier);
+    background: rgb(var(--theme-quaternary)) !important;
+    color: rgb(var(--theme-on-quaternary)) !important;
+}

@@ -1,6 +1,6 @@
 export default class FooterComponent extends HTMLElement {
     innerHTML = `
-        <div class="main__footer--copyright" data-border-top>
+        <div class="main__footer--copyright">
             <ul class="main__footer--copyright-menu">
                 <li><a href="/">Start</a></li>
                 <li><a href="/login">Privacy policy</a></li>

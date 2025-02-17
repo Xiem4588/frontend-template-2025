@@ -5,15 +5,15 @@
 html {
     font-size: 62.5%;
     line-height: 1.6;
-    font-family: var(--fontfamily-body);
+    font-family: var(--font-family-body);
 }
 
 body {
-    font-family: var(--fontfamily-body);
+    font-family: var(--font-family-body);
     font-size: var(--typography-bodytext-m);
-    line-height: 150%;
+    line-height: 1.5;
 
-    @include mediaResponsive("tablet-pro-up") {}
+    @include media-responsive("tablet-pro-up") {}
 }
 
 *, ::after, ::before {
@@ -26,8 +26,8 @@ a {
     color: currentColor;
     text-decoration: none;
     position: relative;
-    padding-bottom: var(--space-4);
     display: inline-block;
+    padding-bottom: var(--space-4);
 
     @include link-animation;
 
@@ -35,40 +35,104 @@ a {
         &::before {
             width: 100%;
         }
+    }
+}
 
+.link-not-before {
+    &::before {
+        display: none;
+    }
+    &:hover {
+        opacity: var(--opacity-06);
     }
 
-    &.link-not-before {
+    &.apply-all * {
         &::before {
             display: none;
+        }
+        &:hover {
+            opacity: var(--opacity-06);
         }
     }
 }
 
 .preamble,
 .preamble p {
+    line-height: 1.5;
     font-size: var(--typography-preamble-m);
 
-    @include mediaResponsive("tablet-pro-up") {}
+    @include media-responsive("tablet-pro-up") {}
 }
 
 small,
 .small {
+    line-height: 1.5;
     font-size: var(--typography-preamble-s);
 
-    @include mediaResponsive("tablet-pro-up") {}
+    @include media-responsive("tablet-pro-up") {}
 }
 
 .large {
+    line-height: 1.3;
     font-size: var(--typography-preamble-l);
 
-    @include mediaResponsive("tablet-pro-up") {}
+    @include media-responsive("tablet-pro-up") {}
 }
 
-p,
-time,
-.text {
+p, time, .text {
+    line-height: 1.5;
     font-size: var(--typography-preamble-m);
 
-    @include mediaResponsive("tablet-pro-up") {}
+    @include media-responsive("tablet-pro-up") {}
+}
+
+h1,.h1 {
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: var(--font-family-headings);
+    font-size: var(--typography-heading-h1-m);
+
+    @include media-responsive("tablet-pro-up") {}
+}
+
+h2,.h2 {
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: var(--font-family-headings);
+    font-size: var(--typography-heading-h2-m);
+
+    @include media-responsive("tablet-pro-up") {}
+}
+
+h3,.h3 {
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: var(--font-family-headings);
+    font-size: var(--typography-heading-h3-m);
+
+    @include media-responsive("tablet-pro-up") {}
+}
+
+h4,.h4 {
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: var(--font-family-headings);
+    font-size: var(--typography-heading-h4-m);
+
+    @include media-responsive("tablet-pro-up") {}
+}
+
+h5,.h5 {
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: var(--font-family-headings);
+    font-size: var(--typography-heading-h5-m);
+
+    @include media-responsive("tablet-pro-up") {}
+}
+
+h6,.h6 {
+    font-size: var(--typography-heading-h6-m);
+
+    @include media-responsive("tablet-pro-up") {}
 }

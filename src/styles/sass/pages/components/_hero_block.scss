@@ -1,0 +1,16 @@
+@use '../../mixins/' as *;
+
+[data-hero-block-image-background="false"] {
+    padding-top: var(--header-height, 0px);
+}
+
+[data-hero-block-image-background="true"] {
+    .hero-block__image-background {
+        height: 500px;
+
+        @include media-responsive("tablet-mini-up") {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+    }
+}

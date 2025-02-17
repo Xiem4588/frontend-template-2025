@@ -1,0 +1,154 @@
+@use "../mixins/" as *;
+
+/*This file contains the styles for the .freeText component, including
+padding, text wrapping, and specific styles for paragraphs, links,
+headings, lists, images, buttons, and blockquotes. It also includes
+styles for custom quote and checklist elements.*/
+
+.freetext {
+    padding: var(--space-24);
+    overflow-wrap: break-word;
+
+    p {
+        margin-bottom: var(--space-24);
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    a:not(.button) {
+        font-weight: 500;
+        text-decoration: underline;
+        overflow-wrap: break-word;
+
+        &:hover {
+            color: var(--color-brand-green);
+        }
+    }
+
+    h2:not(:first-child),
+    h3:not(:first-child),
+    h4:not(:first-child),
+    .preamble:not(:first-of-type) {
+        margin-top: var(--space-24);
+
+        @include media-responsive('tablet') {
+            margin-top: var(--space-48);
+        }
+    }
+
+    ol,
+    ul {
+        margin-bottom: var(--space-24);
+
+        @include media-responsive('tablet') {
+            margin-bottom: var(--space-48);
+        }
+
+        ol,
+        ul {
+            margin-bottom: 0;
+        }
+    }
+
+    ul li,
+    ol li {
+        padding: 0 0 var(--space-10) var(--space-4);
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    ol li {
+        padding-left: var(--space-8);
+    }
+
+    figure.image,
+    img {
+        margin: var(--space-24) 0;
+
+        @include media-responsive('tablet') {
+            margin: var(--space-48) 0;
+        }
+    }
+
+    figure.image > img {
+        margin: 0;
+    }
+
+    .button--link:hover {
+        color: var(--color-brand-green);
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    code {
+        font: revert;
+        word-wrap: break-word;
+    }
+
+    .link-list-block {
+        margin: var(--space-24) 0;
+        color: var(--color-white);
+    }
+
+    blockquote {
+        position: relative;
+    }
+
+    blockquote > p {
+        margin-bottom: 0;
+    }
+
+    .green-quote {
+        @include quote;
+
+        &::before {
+            @include quote-before('/Features/Layouts/Epinova/Assets/sprites/quote-green.svg');
+        }
+    }
+
+    .light-red-quote {
+        @include quote;
+
+        &::before {
+            @include quote-before('/Features/Layouts/Epinova/Assets/sprites/quote-light-red.svg');
+        }
+    }
+
+    .yellow-quote {
+        @include quote;
+
+        &::before {
+            @include quote-before('/Features/Layouts/Epinova/Assets/sprites/quote-yellow.svg');
+        }
+    }
+
+    .check-list {
+        position: relative;
+        list-style: none;
+
+        li {
+            display: block;
+        }
+
+        li::before {
+            position: absolute;
+            left: 0;
+            margin-top: var(--space-8);
+            background: url('/Features/Layouts/Epinova/Assets/sprites/check-mark.svg');
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            content: '';
+        }
+    }
+}

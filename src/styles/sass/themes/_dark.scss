@@ -19,7 +19,7 @@
     --theme-surface-variant-alt: var(--dark-color-rgba-jet-gray);
     --theme-tertiary: var(--default-color-rgba-salmon-pink);
     --theme-accent: var(--dark-color-rgba-deep-pink);
-    --theme-quarternary: var(--default-color-rgba-steel-blue);
+    --theme-quaternary: var(--default-color-rgba-steel-blue);
     --theme-on-background: var(--default-color-rgba-white);
     --theme-on-surface: var(--default-color-rgba-white);
     --theme-on-surface-bright: var(--default-color-rgba-white);
@@ -35,7 +35,7 @@
     --theme-on-surface-variant-alt: var(--default-color-rgba-white);
     --theme-on-tertiary: var(--default-color-rgba-white);
     --theme-on-accent: var(--default-color-rgba-white);
-    --theme-on-quarternary: var(--default-color-rgba-black);
+    --theme-on-quaternary: var(--default-color-rgba-black);
     --theme-kbd: var(--default-color-rgba-dark-slate-gray);
     --theme-on-kbd: var(--default-color-rgba-white);
     --theme-code: var(--dark-color-rgba-slate-gray);
@@ -58,17 +58,5 @@
     --theme-warning-overlay-multiplier: 2;
     --theme-tertiary-overlay-multiplier: 2;
     --theme-accent-overlay-multiplier: 2;
-    --theme-quarternary-overlay-multiplier: 2;
-    //
-    --border-opacity: 0.12;
-    --medium-emphasis-opacity: 0.7;
-    --disabled-opacity: 0.5;
-    --hover-opacity: 0.04;
-    --focus-opacity: 0.12;
-    --selected-opacity: 0.08;
-    --activated-opacity: 0.12;
-    --pressed-opacity: 0.16;
-    --dragged-opacity: 0.08;
-    --idle-opacity: 0.1;
-    --high-emphasis-opacity: 1;
+    --theme-quaternary-overlay-multiplier: 2;
 }

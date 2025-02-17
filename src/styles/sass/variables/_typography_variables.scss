@@ -1,11 +1,25 @@
 // This file contains CSS custom properties for typography font sizes
 
 :root {
-    --fontfamily-body: 'IBM Plex Sans', sans-serif;
-    --fontfamily-heading: 'IBM Plex Sans', sans-serif;
-    --fontfamily-subheading: 'IBM Plex Sans', sans-serif;
-    --fontfamily-preamble: 'IBM Plex Sans', sans-serif;
-    // body
+    // Font family
+    --font-family-body: 'IBM Plex Sans', sans-serif;
+    --font-family-heading: 'IBM Plex Sans', sans-serif;
+    --font-family-subheading: 'IBM Plex Sans', sans-serif;
+    --font-family-preamble: 'IBM Plex Sans', sans-serif;
+
+    // opacity
+    --opacity-01: 0.1;
+    --opacity-02: 0.2;
+    --opacity-03: 0.3;
+    --opacity-04: 0.4;
+    --opacity-05: 0.5;
+    --opacity-06: 0.6;
+    --opacity-07: 0.7;
+    --opacity-08: 0.8;
+    --opacity-09: 0.9;
+    --opacity-1: 1;
+
+    // Body text
     --typography-bodytext-2xl: 2.4rem;
     --typography-bodytext-xl: 2rem;
     --typography-bodytext-l: 1.8rem;
@@ -13,7 +27,8 @@
     --typography-bodytext-s: 1.4rem;
     --typography-bodytext-xs: 1.2rem;
     --typography-bodytext-2xs: 1rem;
-    // preamble
+
+    // Preamble
     --typography-preamble-2xl: 2.4rem;
     --typography-preamble-xl: 2rem;
     --typography-preamble-l: 1.8rem;
@@ -21,22 +36,13 @@
     --typography-preamble-s: 1.4rem;
     --typography-preamble-xs: 1.2rem;
     --typography-preamble-2xs: 1rem;
-    // heading
+
+    // Heading
     --typography-heading-h1-m: 6.8rem;
     --typography-heading-h2-m: 5rem;
     --typography-heading-h3-m: 3rem;
     --typography-heading-h4-m: 2.4rem;
     --typography-heading-h5-m: 1.8rem;
     --typography-heading-h6-m: 1.6rem;
-    // line height
-    --typography-lineheight-100: 100%;
-    --typography-lineheight-110: 110%;
-    --typography-lineheight-120: 120%;
-    --typography-lineheight-130: 130%;
-    --typography-lineheight-140: 140%;
-    --typography-lineheight-150: 150%;
-    --typography-lineheight-160: 160%;
-    --typography-lineheight-170: 170%;
-    --typography-lineheight-180: 180%;
-    --typography-lineheight-190: 190%;
+
 }

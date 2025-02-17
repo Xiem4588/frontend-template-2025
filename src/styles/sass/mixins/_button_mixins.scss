@@ -1,70 +1,48 @@
 
 @mixin button-primary {
-    --button-background: rgba(var(--color-rgba-primary), 1);
-    --button-text-color: rgba(var(--color-rgba-white), 1);
-    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
-    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+    --button-background: var(--theme-primary);
+    --button-text-color: var(--theme-on-primary);
+    --button-shadow-background: var(--theme-primary);
 }
 
-@mixin button-black {
-    --button-background: rgba(var(--color-rgba-black), 1);
-    --button-text-color: rgba(var(--color-rgba-white), 1);
-    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
-    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
-}
-
-@mixin button-white {
-    --button-background: rgba(var(--color-rgba-white), 1);
-    --button-text-color: rgba(var(--color-rgba-black), 1);
-    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
-    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+@mixin button-secondary {
+    --button-background: var(--theme-secondary);
+    --button-text-color: var(--theme-on-secondary);
+    --button-shadow-background: var(--theme-secondary);
 }
 
 @mixin button-tertiary {
-    --button-background: rgba(var(--color-rgba-tertiary), 1);
-    --button-text-color: rgba(var(--color-rgba-black), 1);
-    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
-    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+    --button-background: var(--theme-tertiary);
+    --button-text-color: var(--theme-on-tertiary);
+    --button-shadow-background: var(--theme-secondary);
 }
 
-@mixin button-blue {
-    --button-background: rgba(var(--color-rgba-blue), 1);
-    --button-text-color: rgba(var(--color-rgba-white), 1);
-    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
-    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+@mixin button-info {
+    --button-background: var(--theme-primary);
+    --button-text-color: var(--theme-on-primary);
+    --button-shadow-background: var(--theme-secondary);
 }
 
-@mixin button-beige {
-    --button-background: rgba(var(--color-rgba-beige), 1);
-    --button-text-color: rgba(var(--color-rgba-black), 1);
-    --button-shadow-background: rgba(var(--color-rgba-dark-gray), 1);
-    --button-shadow-focus-color: rgba(var(--color-rgba-dark-gray, 0.6));
+@mixin button-success {
+    --button-background: var(--theme-primary);
+    --button-text-color: var(--theme-on-primary);
+    --button-shadow-background: var(--theme-secondary);
 }
 
-@mixin button-gray {
-    --button-background: rgba(var(--color-rgba-gray), 1);
-    --button-text-color: rgba(var(--color-rgba-black), 1);
-    --button-shadow-background: rgba(var(--color-rgba-black), 1);
-    --button-shadow-focus-color: rgba(var(--color-rgba-gray, 0.6));
+@mixin button-accent {
+    --button-background: var(--theme-accent);
+    --button-text-color: var(--theme-on-accent);
+    --button-shadow-background: var(--theme-secondary);
 }
 
-@mixin button-red {
-    --button-background: rgba(var(--color-rgba-red), 1);
-    --button-text-color: rgba(var(--color-rgba-white), 1);
-    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
-    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+@mixin button-error {
+    --button-background: var(--theme-error);
+    --button-text-color: var(--theme-on-error);
+    --button-shadow-background: var(--theme-secondary);
 }
 
-@mixin button-yellow {
-    --button-background: rgba(var(--color-rgba-yellow), 1);
-    --button-text-color: rgba(var(--color-rgba-black), 1);
-    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
-    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
-}
-
-@mixin button-green {
-    --button-background: rgba(var(--color-rgba-blue), 1);
-    --button-text-color: rgba(var(--color-rgba-white), 1);
-    --button-shadow-background: rgba(var(--color-rgba-beige), 1);
-    --button-shadow-focus-color: rgba(var(--color-rgba-primary, 0.6));
+@mixin button-warning {
+    --button-background: var(--theme-warning);
+    --button-text-color: var(--theme-on-warning);
+    --button-shadow-background: var(--theme-secondary);
 }

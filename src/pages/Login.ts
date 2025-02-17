@@ -1,7 +1,7 @@
 export default class MainComponent extends HTMLElement {
     innerHTML = `
-        <div data-layout-smart="three-per-row" data-layout-use-full-bleed="false" data-container-width="full">
-            <div data-background="surfaceBright" class="main-content__signin--column column-2-first">
+        <div data-layout-smart="3-per-row" data-layout-use-full-bleed="false" data-container-width="full">
+            <div data-background="surface-bright" class="main-content__signin--column column-2-first">
                 <div class="main-content__signin-wrapper">
                     <header class="main-content__signin-header">
                         <a class="main-content__signin-logo" href="/">
@@ -50,7 +50,7 @@ export default class MainComponent extends HTMLElement {
                                     <a href="#">Forgot password?</a>
                                 </div>
                             </div>
-                            <button type="button" class="btn-main">Continue</button>
+                            <button type="button" class="btn button--secondary">Continue</button>
                             <input name="" type="hidden" value="">
                         </form>
 

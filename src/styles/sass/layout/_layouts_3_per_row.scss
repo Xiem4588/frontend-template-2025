@@ -1,14 +1,12 @@
 @use "../mixins/" as *;
 
-/*{ "key":"three-per-row", "value":"", "name":"three Per Row", "columns":3 }*/
-[data-layout-smart="three-per-row"] {
-    @include mediaResponsive("tablet-pro-up") {
+/*{ "key":"3-per-row", "value":"", "name":"three Per Row", "columns":3 }*/
+[data-layout-smart="3-per-row"] {
+    @include media-responsive("tablet-pro-up") {
         @include grid-columns($columns: 3, $min: 0px, $max: 1fr, $gap: 24px);
     }
 
     &[data-layout-use-full-bleed="false"] {
-        @include mediaResponsive("tablet-pro-up") {
-        // gap: 0;
-        }
+        gap: 0;
     }
 }

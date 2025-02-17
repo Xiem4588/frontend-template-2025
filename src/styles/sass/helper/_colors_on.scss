@@ -1,0 +1,53 @@
+@use "../mixins/" as *;
+
+.on-background {
+    color: rgb(var(--theme-on-background)) !important;
+}
+.on-surface {
+    color: rgb(var(--theme-on-surface)) !important;
+}
+.on-surface-bright {
+    color: rgb(var(--theme-on-surface-bright)) !important;
+}
+.on-surface-light {
+    color: rgb(var(--theme-on-surface-light)) !important;
+}
+.on-surface-variant {
+    color: rgb(var(--theme-on-surface-variant)) !important;
+}
+.on-primary {
+    color: rgb(var(--theme-on-primary)) !important;
+}
+.on-primary-darken-1 {
+    color: rgb(var(--theme-on-primary-darken-1)) !important;
+}
+.on-secondary {
+    color: rgb(var(--theme-on-secondary)) !important;
+}
+.on-secondary-darken-1 {
+    color: rgb(var(--theme-on-secondary-darken-1)) !important;
+}
+.on-error {
+    color: rgb(var(--theme-on-error)) !important;
+}
+.on-info {
+    color: rgb(var(--theme-on-info)) !important;
+}
+.on-success {
+    color: rgb(var(--theme-on-success)) !important;
+}
+.on-warning {
+    color: rgb(var(--theme-on-warning)) !important;
+}
+.on-surface-variant-alt {
+    color: rgb(var(--theme-on-surface-variant-alt)) !important;
+}
+.on-tertiary {
+    color: rgb(var(--theme-on-tertiary)) !important;
+}
+.on-accent {
+    color: rgb(var(--theme-on-accent)) !important;
+}
+.on-quaternary {
+    color: rgb(var(--theme-on-quaternary)) !important;
+}

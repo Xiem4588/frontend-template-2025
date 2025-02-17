@@ -1,0 +1,32 @@
+:root {
+    --table-head-text-color: var(--color-white);
+    --table-head-color: var(--color-gray-dark);
+    --table-text-align: left;
+    --table-padding: var(--space-12);
+    --table-body-background-odd: var(--color-gray-superlight);
+    --table-body-background-even: var(--color-white);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: var(--table-text-align);
+}
+
+thead {
+    background-color: var(--table-head-color);
+    color: var(--table-head-text-color);
+}
+
+th,
+td {
+    padding: var(--table-padding);
+}
+
+tbody {
+    background-color: var(--table-body-background-odd);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--table-body-background-even);
+}

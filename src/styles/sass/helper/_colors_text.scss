@@ -1,0 +1,53 @@
+@use "../mixins/" as *;
+
+.text-background {
+    color: rgb(var(--theme-background)) !important;
+}
+.text-surface {
+    color: rgb(var(--theme-surface)) !important;
+}
+.text-surface-bright {
+    color: rgb(var(--theme-surface-bright)) !important;
+}
+.text-surface-light {
+    color: rgb(var(--theme-surface-light)) !important;
+}
+.text-surface-variant {
+    color: rgb(var(--theme-surface-variant)) !important;
+}
+.text-primary {
+    color: rgb(var(--theme-primary)) !important;
+}
+.text-primary-darken-1 {
+    color: rgb(var(--theme-primary-darken-1)) !important;
+}
+.text-secondary {
+    color: rgb(var(--theme-secondary)) !important;
+}
+.text-secondary-darken-1 {
+    color: rgb(var(--theme-secondary-darken-1)) !important;
+}
+.text-error {
+    color: rgb(var(--theme-error)) !important;
+}
+.text-info {
+    color: rgb(var(--theme-info)) !important;
+}
+.text-success {
+    color: rgb(var(--theme-success)) !important;
+}
+.text-warning {
+    color: rgb(var(--theme-warning)) !important;
+}
+.text-surface-variant-alt {
+    color: rgb(var(--theme-surface-variant-alt)) !important;
+}
+.text-tertiary {
+    color: rgb(var(--theme-tertiary)) !important;
+}
+.text-accent {
+    color: rgb(var(--theme-accent)) !important;
+}
+.text-quaternary {
+    color: rgb(var(--theme-quaternary)) !important;
+}

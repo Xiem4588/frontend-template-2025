@@ -4,17 +4,15 @@
 [data-layout-smart="4-per-row"] {
     @include grid-columns($columns: 1, $min: 0px, $max: 1fr, $gap: 24px);
 
-    @include mediaResponsive("tablet-pro-up") {
+    @include media-responsive("tablet-pro-up") {
         @include grid-columns($columns: 2, $min: 0px, $max: 1fr, $gap: 24px);
     }
 
-    @include mediaResponsive("desktop-small-up") {
+    @include media-responsive("desktop-small-up") {
         @include grid-columns($columns: 4, $min: 0px, $max: 1fr, $gap: 24px);
     }
 
     &[data-layout-use-full-bleed="false"] {
-        @include mediaResponsive("tablet-pro-up") {
         gap: 0;
-        }
     }
 }

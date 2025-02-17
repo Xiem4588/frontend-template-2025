@@ -42,19 +42,15 @@ export const headerMenu = () => {
         }
     });
 
-    const updateHeaderPadding = () => {
+    //
+    const checkHeightHeader = () => {
         const headerFixedTop = document.querySelector('[data-header-fixed-top]');
-        const headerHeight = headerFixedTop ? headerFixedTop.offsetHeight : 0;
-        document.querySelectorAll('[data-header-padding-top]').forEach(el => {
-            if (el) {
-                el.style.paddingTop = `${headerHeight}px`;
-            }
-        });
+        if (headerFixedTop) {
+            document.documentElement.style.setProperty('--header-height', `${headerFixedTop.offsetHeight}px`);
+        }
     };
-
     // Initial calculation
-    updateHeaderPadding();
-
+    checkHeightHeader();
     // Recalculate on window resize
-    window.addEventListener('resize', updateHeaderPadding);
+    window.addEventListener('resize', checkHeightHeader);
 }

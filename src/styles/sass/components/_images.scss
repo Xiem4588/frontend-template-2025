@@ -1,0 +1,11 @@
+
+// Purpose: Define image styles
+
+:root {}
+
+.image-object-fit__cover {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}

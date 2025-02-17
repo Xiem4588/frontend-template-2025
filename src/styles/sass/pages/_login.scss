@@ -22,7 +22,7 @@
         gap: var(--space-50);
         margin-bottom: 20px;
 
-        @include mediaResponsive('tablet-mini-up') {
+        @include media-responsive('tablet-mini-up') {
             gap: var(--space-100);
             margin-bottom: 0px;
         }
@@ -113,5 +113,11 @@
 
     &--align-right {
         text-align: right;
+    }
+}
+
+.d-m-none {
+    @include media-responsive('tablet-pro-down') {
+        display: none;
     }
 }
