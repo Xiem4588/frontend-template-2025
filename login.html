@@ -18,13 +18,11 @@
     </div>
 
     <script type="module">
-        import HeaderComponent from './src/components/HeaderComponent.ts';
-        import MainComponent from './src/pages/Login.ts';
-        import FooterComponent from './src/components/FooterLoginComponent.ts';
+        import LoginBlock from './src/Features/LoginBlock.ts';
+        import LoginFooter from './src/Features/LoginFooter.ts';
 
-        customElements.define('header-component', HeaderComponent);
-        customElements.define('main-component', MainComponent);
-        customElements.define('footer-component', FooterComponent);
+        customElements.define('main-component', LoginBlock);
+        customElements.define('footer-component', LoginFooter);
     </script>
 
     <script src="./src/js/main.js" type="module"></script>

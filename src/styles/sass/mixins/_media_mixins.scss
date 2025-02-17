@@ -44,10 +44,10 @@
 }
 
 @mixin mediaContainerWidth($width: 1439px, $minmax: "max") {
-    @if $width && $minmax == "max"  {
+    @if $width & $minmax == "max"  {
         max-width: $width;
     }
-    @else if $width && $minmax == "min" {
+    @else if $width & $minmax == "min" {
         min-width: $width;
     }
     width: 100%;

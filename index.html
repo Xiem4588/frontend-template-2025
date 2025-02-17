@@ -21,13 +21,13 @@
     </div>
 
     <script type="module">
-        import HeaderComponent from './src/components/HeaderComponent.ts';
-        import MainComponent from './src/pages/StartPage.ts';
-        import FooterComponent from './src/components/FooterComponent.ts';
+        import SiteHeader from './src/Features/SiteHeader.ts';
+        import NewBlock from './src/Features/NewBlock.ts';
+        import SiteFooter from './src/Features/SiteFooter.ts';
 
-        customElements.define('header-component', HeaderComponent);
-        customElements.define('main-component', MainComponent);
-        customElements.define('footer-component', FooterComponent);
+        customElements.define('header-component', SiteHeader);
+        customElements.define('main-component', NewBlock);
+        customElements.define('footer-component', SiteFooter);
     </script>
 
     <script src="./src/js/main.js" type="module"></script>
