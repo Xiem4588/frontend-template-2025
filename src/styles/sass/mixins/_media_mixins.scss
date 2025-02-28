@@ -1,6 +1,6 @@
 
 // RESPONSIVE
-@mixin media-responsive($device) {
+@mixin respond-to($device) {
     @if $device == "tablet-mini-down" {
         @media (max-width: 767px) {
             @content;

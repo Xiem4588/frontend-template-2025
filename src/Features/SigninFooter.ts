@@ -4,11 +4,12 @@ export default class SigninFooter extends HTMLElement {
     innerHTML = `
         <div class="main__footer--copyright">
             <ul class="main__footer--copyright-menu">
-                <li><a href="/">Start</a></li>
-                <li><a href="/signin">Privacy policy</a></li>
+                <li><a href="/">Home</a></li>
+                <li>|</li>
+                <li><a href="/signin">Sign in</a></li>
+                <li>|</li>
+                <li>© 2024 Siteimprove</li>
             </ul>
-            |
-            <div class="main__footer--copyright-siteimprove">© 2024 Siteimprove</div>
             <div class="theme-selector">
                 <ul class="theme-options">
                     <li data-site-theme="system" class="active">System</li>

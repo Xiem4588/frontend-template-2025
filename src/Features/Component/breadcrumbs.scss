@@ -5,13 +5,13 @@
 }
 
 .breadcrumbs {
-    @include media-responsive("tablet-mini-up") {
+    @include respond-to("tablet-mini-up") {
         width: 100%;
     }
 
     a,
     span {
-        @include media-responsive("tablet-mini-up") {
+        @include respond-to("tablet-mini-up") {
             color: rgb(var(--breadcrumb-link-color));
             font-size: var(--typography-preamble-l);
         }
@@ -48,7 +48,7 @@
             border-top: 2px solid currentColor;
             border-right: 2px solid currentColor;
 
-            @include media-responsive("tablet-mini-up") {
+            @include respond-to("tablet-mini-up") {
                 border-top: 2px solid rgb(var(--breadcrumb-link-color));
                 border-right: 2px solid rgb(var(--breadcrumb-link-color));
             }

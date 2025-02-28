@@ -1,12 +1,12 @@
-// Flex Layout
-@mixin display-layout(
-    $display,
+// Flex Layout parent
+@mixin flex-layout(
     $direction: null,
     $justify: null,
     $align: null,
-    $wrap: null
+    $wrap: null,
+    $gap: null
 ) {
-    display: $display;
+    display: flex;
     @if $direction {
         flex-direction: $direction;
     }
@@ -22,9 +22,29 @@
     @if $wrap {
         flex-wrap: $wrap;
     }
+
+    @if $gap {
+        gap: $gap;
+    }
 }
 
-// Grid Layout
+// Flex columns child
+@mixin flex-columns($flex-grow: null, $flex-basis: null, $max-width: null, $offset: null) {
+    
+    @if $flex-grow {
+        flex: $flex-grow $flex-basis;
+    }
+
+    @if $max-width {
+        max-width: $max-width;
+    }
+
+    @if $offset != null and type-of($offset) == 'number' {
+        margin-left: $flex-grow * $offset;
+    }
+}
+
+// Grid Layout parent
 @mixin grid-layout(
     $columns,
     $columnGap: 24px,
@@ -61,18 +81,15 @@
     }
 }
 
-// Flex columns
-@mixin flex-columns($flex-grow: 1, $flex-basis: 0, $max-width: null, $offset: null) {
-    flex: $flex-grow $flex-basis;
-    max-width: $max-width;
-    @if $offset {
-        margin-left: $flex-grow * $offset;
-    }
-}
-
-// Grid Columns
-@mixin grid-columns($columns: 1, $min: 0px, $max: 1fr, $gap: 0px) {
+// Grid Columns child
+@mixin grid-columns($columns: null, $min: null, $max: null, $gap: 0px) {
     display: grid;
-    grid-template-columns: repeat($columns, minmax($min, $max));
-    gap: $gap;
+
+    @if $columns {
+        grid-template-columns: repeat($columns, minmax($min, $max));
+    }
+
+    @if $gap {
+        gap: $gap;
+    }
 }

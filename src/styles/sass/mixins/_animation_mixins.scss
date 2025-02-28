@@ -1,6 +1,6 @@
 // Animation mixin
 
-@mixin link-animation($color: currentColor, $height: 2px) {
+@mixin link-before-animation($color: currentColor, $height: 2px) {
     transition: all .2s;
     &::before {
         content: '';

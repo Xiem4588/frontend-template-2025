@@ -1,0 +1,46 @@
+@use '../../styles/sass/mixins/' as *;
+
+:root {}
+
+.article-list-block {
+    padding: var(--space-24);
+}
+.article-list-block__wrapper {
+    @include grid-columns($gap: 50px);
+}
+
+.teaser-base-item__link {
+    @include flex-layout($direction: column, $gap: var(--space-16));
+    font-weight: 400;
+    transition: all 0.3s;
+
+    &:hover {
+        background: rgb(var(--theme-on-background), 0.1);
+
+        .teaser-base-item__image img {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.teaser-base-item__image {
+    overflow: hidden;
+
+    img {
+        transition: transform 0.3s;
+    }
+}
+
+.teaser-base-item__content {
+    @include flex-layout($direction: column, $gap: var(--space-8));
+    padding: var(--space-16);
+
+    @include respond-to('tablet-mini-up') {
+        padding: var(--space-24);
+    }
+}
+
+.teaser-base-item__time {
+    opacity: var(--opacity-06);
+    @include flex-layout($direction: row, $gap: var(--space-16));
+}

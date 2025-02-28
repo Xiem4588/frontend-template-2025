@@ -4,7 +4,7 @@
 [data-layout-smart="3-per-row"] {
     @include grid-columns($columns: 1, $min: 0px, $max: 1fr, $gap: 24px);
 
-    @include media-responsive("tablet-pro-up") {
+    @include respond-to("tablet-pro-up") {
         @include grid-columns($columns: 3, $min: 0px, $max: 1fr, $gap: 24px);
     }
 

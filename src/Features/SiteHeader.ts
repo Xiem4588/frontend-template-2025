@@ -61,7 +61,7 @@ export default class SiteHeader extends HTMLElement {
                             </div>
                         </li>
                         <li class="mega-menu__item" data-mega-menu-item="true" aria-hidden="true">
-                            <a class="mega-menu__item-button" data-item-button href="/signin.html">Menu 3</a>
+                            <a class="mega-menu__item-button" data-item-button href="/signin.html">Sign in</a>
                         </li>
                     </ul>
                 </div>

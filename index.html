@@ -10,16 +10,29 @@
     <script type="module">
         import './src/Features/SiteHeader.ts';
         import './src/Features/HeroBlock.ts';
+        import './src/Features/FeaturedContentBlock.ts';
+        import './src/Features/ArticleListBlock.ts';
         import './src/Features/SiteFooter.ts';
     </script>
 </head>
 
 <body>
-    <site-header class="main-header" data-header-fixed-top></site-header>
-    <main class="main-content"><hero-block></hero-block></main>
-    <site-footer class="main-footer"></site-footer>
+    <site-header
+        class="main-header"
+        data-header-fixed-top="true"
+        data-header-scroll
+        data-header-height>
+    </site-header>
+    <main class="main-content">
+        <hero-block></hero-block>
+        <featured-content-block></featured-content-block>
+        <article-list-block></article-list-block>
+    </main>
+    <site-footer
+        class="main-footer">
+    </site-footer>
 
-    <script src="./src/js/main.js" type="module"></script>
+    <script src="./src/js/main.ts" type="module"></script>
 </body>
 
 </html>

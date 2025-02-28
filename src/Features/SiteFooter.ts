@@ -11,21 +11,21 @@ export default class SiteFooter extends HTMLElement {
                 <div class="main__footer-social-media-list">
                     <div class="link-area">
                         <div class="main__footer-social-media-link">
-                            <a class="link-not-before" href="#">
+                            <a class="link-before-animation-none" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="23" viewBox="0 0 22 23" width="22"><script xmlns=""/><path clip-rule="evenodd" d="m11 .269531c-6.05 0-11 4.949999-11 10.999969 0 6.05 4.95 11 11 11s11-4.95 11-11c0-6.04997-4.95-10.999969-11-10.999969zm4.8583 8.616709v.275c0 3.20836-2.3833 6.87496-6.87495 6.87496-1.375 0-2.65833-.3666-3.66666-1.1 1.28333.1834 2.56666-.1833 3.57499-1.0083-1.1 0-1.925-.7333-2.29166-1.65.36666.0917.73333.0917 1.1 0-1.1-.1833-1.925-1.1917-1.925-2.38333.36667.18333.73333.27503 1.1.27503-.64167-.45836-1.1-1.1917-1.1-2.0167 0-.45833.09166-.825.36667-1.19166 1.19166 1.46666 2.93333 2.38333 4.95001 2.56666-.0917-.275-.0917-.45833-.0917-.64166 0-1.375 1.1-2.38334 2.3834-2.38334.7333 0 1.2833.275 1.7416.73334.55-.09167 1.8333-.275 1.8333-.275-.3666.55-.6416 1.55833-1.1 1.925z" fill="currentColor" fill-rule="evenodd"/><script xmlns=""/></svg>
                             </a>
                         </div>
                     </div>
                     <div class="link-area">
                         <div class="main__footer-social-media-link">
-                            <a class="link-not-before" href="#">
+                            <a class="link-before-animation-none" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="23" viewBox="0 0 22 23" width="22"><script xmlns=""/><path clip-rule="evenodd" d="m11 .269531c-6.05 0-11 4.949999-11 10.999969 0 6.05 4.95 11 11 11s11-4.95 11-11c0-6.04997-4.95-10.999969-11-10.999969zm3.3 10.541669h-1.925v6.4166h-2.74999v-6.4166h-1.83334v-1.83337h1.83334v-1.1c0-1.00834.36666-2.56667 2.38329-2.56667h2.2v2.10833h-1.2833c-.1833 0-.55.09167-.55.55v.91667h2.1083z" fill="currentColor" fill-rule="evenodd"/><script xmlns=""/></svg>
                             </a>
                         </div>
                     </div>
                     <div class="link-area">
                         <div class="main__footer-social-media-link">
-                            <a class="link-not-before" href="#">
+                            <a class="link-before-animation-none" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="23" viewBox="0 0 22 23" width="22"><script xmlns=""/><path clip-rule="evenodd" d="m11 .269531c-6.05 0-11 4.949999-11 10.999969 0 6.05 4.95 11 11 11s11-4.95 11-11c0-6.04997-4.95-10.999969-11-10.999969zm7.4937 11.549969c0 1.1688-.1375 2.3375-.1375 2.3375s-.1375.9625-.6187 1.4438c-.4457.4457-.9817.5302-1.3153.5828-.0781.0123-.145.0229-.1972.0359-2.1313.1375-5.225.1375-5.225.1375s-3.91875 0-5.0875-.1375c-.061-.0122-.13499-.0222-.21852-.0335-.38714-.0525-.97908-.1328-1.43148-.5852-.48125-.4125-.61875-1.4438-.61875-1.4438s-.1375-1.1687-.1375-2.3375v-1.1c0-1.16872.1375-2.33747.1375-2.33747s.1375-.9625.61875-1.44375c.46011-.46011.96833-.53531 1.32342-.58785.06937-.01026.1329-.01966.18908-.0309 2.0625-.1375 5.225-.1375 5.225-.1375s3.1625 0 5.225.1375c.275 0 .9625.06875 1.5125.61875.4812.4125.6187 1.44375.6187 1.44375s.1375 1.16875.1375 2.33747zm-5.0187-.6875-4.05625 1.9938v-4.05627z" fill="currentColor" fill-rule="evenodd"/><script xmlns=""/></svg>
                             </a>
                         </div>
@@ -35,7 +35,7 @@ export default class SiteFooter extends HTMLElement {
 
             <div class="main__footer--nav">
                 <nav class="main__footer--navlinks">
-                    <ul class="main__footer--navlist" data-layout-smart="5-per-row">
+                    <ul class="main__footer--navlist" data-layout-smart="6-per-row">
                         <li class="main__footer--navlist-item">
                             <ul class="main__footer--sublist">
                                 <li class="main__footer--sublist-item-title">
@@ -129,7 +129,7 @@ export default class SiteFooter extends HTMLElement {
                                     </ul>
                                 </div>
                                 <div class="main__footer-stats__bcorp">
-                                    <a target="_blank" rel="noopener noreferrer" class="main__footer-bcorp-link link-not-before" href="#">
+                                    <a target="_blank" rel="noopener noreferrer" class="main__footer-bcorp-link link-before-animation-none" href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="34px" fill="currentColor" viewBox="0 0 417.5 101.2"><script xmlns=""/><polygon points="145.7 61.6 146.1 67.8 141.9 60.2 126.1 35.1 120.6 35.1 120.6 73 124.7 73 124.7 46.1 124.4 39.9 124.7 39.9 128.9 47.2 144.7 72.6 150.5 72.6 150.5 34.8 145.7 34.8 145.7 61.6"/><path d="M178.1,34.4c-11,0-17.5,7.6-17.5,19.6s6.9,19.6,17.5,19.6,17.5-7.6,17.5-19.6-6.9-19.6-17.5-19.6ZM178.1,69.2c-7.6,0-12.7-5.8-12.7-15.1s4.8-15.1,12.7-15.1,12.7,5.8,12.7,15.1-5.2,15.1-12.7,15.1Z"/><polygon points="229 34.8 219.7 60.9 216.9 68.5 214.5 60.9 204.9 34.8 200.1 34.8 214.5 72.6 220 72.6 234.5 34.8 229 34.8"/><path d="M254.8,34.8h-6.2l-14.4,37.8h4.8l4.1-10.7h17.2l4.1,10.7h4.8l-14.4-37.8ZM244.1,57.8l5.2-13.4,1.7-5.2,1.7,5.2,5.2,13.4h-13.8Z"/><path d="M290.6,69.2c-7.6,0-12.7-5.8-12.7-15.1s5.2-15.1,13.1-15.1c4.5-.3,8.6,2.4,9.6,6.5l4.5-2.1c-2.4-5.8-8.3-9.3-14.8-8.9-10.7,0-17.5,7.6-17.5,19.6s6.9,19.6,17.5,19.6c6.9.3,13.1-3.8,15.1-10.3l-4.5-1.7c-1.4,4.5-5.5,7.6-10.3,7.6Z"/><path d="M330.1,34.8h-5.5l-14.8,37.8h4.8l4.1-10.7h17.2l4.1,10.7h4.8l-14.8-37.8ZM320.1,57.8l5.2-13.4,1.7-5.2,1.7,5.2,5.2,13.4h-13.8Z"/><path d="M370.7,56.1c5.2-.7,8.9-5.2,8.6-10.3,0-6.9-5.2-11-13.1-11h-14.4v37.8h4.5v-15.8h9.3l10.3,15.8h5.5l-10.7-16.5ZM357,52.7v-13.4h9.6c5.5,0,7.9,2.4,7.9,6.9s-2.8,6.9-7.9,6.9l-9.6-.3Z"/><polygon points="395.1 68.5 395.1 55.4 412 55.4 412 51.3 395.1 51.3 395.1 39.2 416.8 39.2 416.8 34.8 390.3 34.8 390.3 72.6 417.5 72.6 417.5 68.5 395.1 68.5"/><rect x="27" y="21.2" width="2.9" height="58.7"/><rect x="32.8" y="21.2" width="3.1" height="58.7"/><rect x="39" y="21.2" width="2.9" height="58.7"/><rect x="60.2" y="21.2" width="2.9" height="58.7"/><rect x="66.2" y="21.2" width="2.9" height="58.7"/><rect x="72.2" y="21.2" width="2.9" height="58.7"/><path d="M26.8,21.2l33.4,58.7h2.9L29.9,21.2h-3.1ZM32.8,21.2l33.4,58.7h2.7L35.7,21.2h-2.9ZM38.6,21.2l33.4,58.7h2.9L41.7,21.2h-3.1Z"/><path d="M50.6,3.3V0C22.6,0,0,22.6,0,50.6s22.6,50.6,50.6,50.6v-3.3c-26.1.6-47.9-20.1-48.3-46.3C1.7,25.3,22.6,3.7,48.7,3.3h1.9Z"/><path d="M50.6,1.2C23.4,1.2,1.2,23.2,1.2,50.6s22.2,49.4,49.4,49.4,49.4-22.2,49.4-49.4S78,1.2,50.8,1.2t-.2,0ZM50.6,98.8c-26.6,0-48.3-21.6-48.3-48.3S23.9,2.3,50.6,2.3s48.3,21.6,48.3,48.3h0c0,26.6-21.6,48.3-48.3,48.3Z"/><script xmlns=""/></svg>
                                     </a>
                                 </div>
@@ -139,13 +139,14 @@ export default class SiteFooter extends HTMLElement {
                 </nav>
             </div>
 
-            <div class="main__footer--copyright" data-border-top>
+            <div class="main__footer--copyright" data-border-top="true">
                 <ul class="main__footer--copyright-menu">
-                    <li><a href="/">Start</a></li>
-                    <li><a href="/signin">Privacy policy</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li>|</li>
+                    <li><a href="/signin">Sign in</a></li>
+                    <li>|</li>
+                    <li>© 2024 Siteimprove</li>
                 </ul>
-                |
-                <div class="main__footer--copyright-siteimprove">© 2024 Siteimprove</div>
                 <div class="theme-selector">
                     <ul class="theme-options">
                         <li data-site-theme="system" class="active">System</li>

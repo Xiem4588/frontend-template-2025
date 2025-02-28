@@ -46,7 +46,7 @@ select {
 	border: 1px solid rgb(var(--border-color));
 	background: rgb(var(--theme-surface-light));
 
-	@include media-responsive('desktop-up') {
+	@include respond-to('desktop-small-up') {
 		font-size: var(--typography-bodytext-m);
 	}
 
@@ -92,7 +92,7 @@ select {
 			visibility: visible;
 		}
 
-		@include media-responsive('desktop-up') {
+		@include respond-to('desktop-small-up') {
 			left: 25px;
 		}
 	}
@@ -103,7 +103,7 @@ input[type="radio"] {
 	@include visually-hidden;
 	margin: (math.div(((18px * 1.25) - 20px), 2) + 20px) 0 0 math.div(20px, 2);
 
-	@include media-responsive('desktop-up') {
+	@include respond-to('desktop-small-up') {
 		margin: (math.div(((20px * 1.25) - 20px), 2) + 20px) 0 0 math.div(20px, 2);
 	}
 
@@ -141,13 +141,13 @@ input[type="radio"] {
 		cursor: pointer;
 		user-select: none;
 
-		@include media-responsive('desktop-up') {
+		@include respond-to('desktop-small-up') {
 			font-size: var(--typography-bodytext-m);
 			line-height: 1.4;
 		}
 
 		&>p {
-			@include media-responsive('desktop-up') {
+			@include respond-to('desktop-small-up') {
 				font-size: var(--typography-bodytext-m);
 			}
 		}

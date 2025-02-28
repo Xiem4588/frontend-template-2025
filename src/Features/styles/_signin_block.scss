@@ -31,7 +31,7 @@
     justify-content: center;
     position: relative;
 
-    @include media-responsive('tablet-pro-down') {
+    @include respond-to('tablet-pro-down') {
         display: none;
     }
 }
@@ -44,7 +44,7 @@
     gap: var(--space-50);
     margin-bottom: 20px;
 
-    @include media-responsive('tablet-mini-up') {
+    @include respond-to('tablet-mini-up') {
         gap: var(--space-100);
         margin-bottom: 0px;
     }

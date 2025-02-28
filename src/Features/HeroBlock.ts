@@ -3,7 +3,7 @@ import './Component/Breadcrumbs';
 
 export default class HeroBlock extends HTMLElement {
     innerHTML = `
-        <div class="hero-block" data-hero-block-background="true">
+        <div class="hero-block" data-hero-block-background="true"> <!-- data-hero-block-background="" ---Or-- data-background="" -->
             <div class="hero-block__image">
                 <img alt="image" src="https://integration.epinova.se/globalassets/epinova.se/bildbank/detaljbilder/epinova-laptop-figma-svkom-retusch-2000px.jpg?mode=crop&amp;scale=both&amp;format=webp&amp;f.sharpen=25&amp;down.filter=robidoux_sharp&amp;up.filter=robidoux_sharp&amp;">
             </div>
